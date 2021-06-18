@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: fight;
+  src: url("./font/힘내라는\ 말보단.ttf");
+}
