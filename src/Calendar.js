@@ -2,7 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function Calender(){
+function Calendar(){
     return (
         <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"  align='center'>
             <br/>
@@ -69,4 +69,4 @@ function Calender(){
 }
 
 
-export default Calender
+export default Calendar
