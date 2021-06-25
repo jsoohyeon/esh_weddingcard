@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/invite_you/static/css/main.dfc6fc63.chunk.css",
-    "main.js": "/invite_you/static/js/main.aa751e2b.chunk.js",
-    "main.js.map": "/invite_you/static/js/main.aa751e2b.chunk.js.map",
+    "main.css": "/invite_you/static/css/main.159d9875.chunk.css",
+    "main.js": "/invite_you/static/js/main.12ddf6a8.chunk.js",
+    "main.js.map": "/invite_you/static/js/main.12ddf6a8.chunk.js.map",
     "runtime-main.js": "/invite_you/static/js/runtime-main.926aa480.js",
     "runtime-main.js.map": "/invite_you/static/js/runtime-main.926aa480.js.map",
     "static/css/2.138d30e7.chunk.css": "/invite_you/static/css/2.138d30e7.chunk.css",
@@ -12,8 +12,9 @@
     "static/js/3.62747ce7.chunk.js.map": "/invite_you/static/js/3.62747ce7.chunk.js.map",
     "index.html": "/invite_you/index.html",
     "static/css/2.138d30e7.chunk.css.map": "/invite_you/static/css/2.138d30e7.chunk.css.map",
-    "static/css/main.dfc6fc63.chunk.css.map": "/invite_you/static/css/main.dfc6fc63.chunk.css.map",
+    "static/css/main.159d9875.chunk.css.map": "/invite_you/static/css/main.159d9875.chunk.css.map",
     "static/js/2.c0d16732.chunk.js.LICENSE.txt": "/invite_you/static/js/2.c0d16732.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/invite_you/static/media/힘내라는 말보단.8b26299d.ttf",
     "static/media/eungself.5e4f24e4.jpeg": "/invite_you/static/media/eungself.5e4f24e4.jpeg",
     "static/media/gallery0102.ec503a56.jpg": "/invite_you/static/media/gallery0102.ec503a56.jpg",
     "static/media/gallery0189.7e4a3208.jpg": "/invite_you/static/media/gallery0189.7e4a3208.jpg",
@@ -25,14 +26,13 @@
     "static/media/kakao-map.57f94644.png": "/invite_you/static/media/kakao-map.57f94644.png",
     "static/media/mainimg2.0afebf78.jpeg": "/invite_you/static/media/mainimg2.0afebf78.jpeg",
     "static/media/naver-map.13ab25c6.png": "/invite_you/static/media/naver-map.13ab25c6.png",
-    "static/media/slick-theme.css": "/invite_you/static/media/slick.c94f7671.ttf",
-    "static/media/App.css": "/invite_you/static/media/힘내라는 말보단.8b26299d.ttf"
+    "static/media/slick-theme.css": "/invite_you/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.926aa480.js",
     "static/css/2.138d30e7.chunk.css",
     "static/js/2.c0d16732.chunk.js",
-    "static/css/main.dfc6fc63.chunk.css",
-    "static/js/main.aa751e2b.chunk.js"
+    "static/css/main.159d9875.chunk.css",
+    "static/js/main.12ddf6a8.chunk.js"
   ]
 }
