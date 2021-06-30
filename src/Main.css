@@ -1,21 +1,61 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; }
+
 .Main-photo {
-    width: 100%; 
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     position:relative;
     text-align:center;
 }
-  
+@media only screen and (min-width: 56.25em) {
+    .Main-photo {
+      height: 80vh; } }
+
+.Main-photo-text {
+    letter-spacing : -0.13em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    text-align: right;
+    font-size: 2.3rem;
+    position: absolute;
+    top:1%;
+    right:6%;
+    color: #fff
+}
+
+.Main-text-group {
+    height: 30vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+@media only screen and (min-width: 56.25em) {
+    .Main-text-group {
+      height: 20vh; } }
+
 .Main-text {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: fight;
-    font-size: 150%;
-    margin-top: 5px;
-    margin-bottom: 2px;
+    font-size: 2rem;
+    margin-bottom: 2px;   
 }
+
+.Main-text-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: fight;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;   
+}
+
 
 .Self-photo-right {
     margin-left : 5%;
@@ -30,19 +70,78 @@
     align-items: center;
 }
 
-.background-lightgray {
+.greeting {
+    width: 100%;
+    padding: 3.2rem;
+    padding-bottom: 1.7rem;
+    text-align: center;
     background-color: lightgray;
+    color: #4e4e4e;
+}
+@media only screen and (min-width: 56.25em) {
+    .greeting {
+        padding: 6rem;; } }
+
+.greeting-main {
+    font-size: 1.8rem;
+    margin-bottom: 3.5rem;
+    color: #626262;
 }
 
-.Main-photo-text {
-    letter-spacing : -0.13em;
-    margin-right: 0.5em;
-    margin-top: 0.5em;
-    text-align: right;
-    font-size: 1.2rem;
-    position: absolute;
-    top:1%;
-    left:85%;
+.greeting-message-head {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.greeting-message-body {
+    font-size: 1.8rem;
+    margin-bottom: 3.5rem;
+    font-weight: bold;
+}
+
+.greeting-span::before {
+    content: "";
+    width: 10rem;
+    height: .3rem;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 3.5rem;
+}
+
+.greeting-parent {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.greeting-parent span {
+    font-size: 1.5rem;
+}
+
+.btn--contact {
+    display: inline-block;
+    width: 70vw;
+    height: 4rem;
+    font-size: 1.3rem;
+    color: #4e4e4e;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+@media only screen and (min-width: 56.25em) {
+    .btn--contact:visited {
+        width: 30rem;
+        margin-bottom: 0rem;} }
+
+.popup--1 {
+    visibility: hidden;
+}
+
+.popup--1:target {
+    visibility: visible;
 }
 
 .Gallery-photo {
