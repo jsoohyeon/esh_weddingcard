@@ -23,11 +23,11 @@ const settings = {
 function Gallery(){
     return (
         <div>
-            <div className='map-top'>
+            <div className='title'>
                 Gallery
             </div>
             <div align='center'>
-                <Slider {...settings} style={{width:'50%'}}>
+                <Slider {...settings} style={{width:'80%'}}>
                     <div>
                         <img src = {gallery0102} className="Gallery-photo" alt = "main"/>
                     </div>
@@ -48,28 +48,5 @@ function Gallery(){
         </div>
     )
 }
-
-function NextArrow(props){
-    const {className, style, onClick} = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", background: "red" }}
-            onClick={onClick}
-        />
-    )
-}
-
-function PrevArrow(props){
-    const {className, style, onClick} = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", background: "red" }}
-            onClick={onClick}
-        />
-    )
-}
-
 
 export default Gallery

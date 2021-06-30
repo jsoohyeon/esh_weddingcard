@@ -12,9 +12,9 @@
     flex-direction: column;
     text-align: center;
     font-family: fight;
-    font-size: 200%;
+    font-size: 150%;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .Self-photo-right {
@@ -70,11 +70,11 @@
     text-align: center;
 }
 
-.map-top{
+.title{
     flex-direction: column;
     text-align: center;
-    font-family: JCfg;
-    font-size: 450%;
+    font-family: YesevaOne;
+    font-size:400%;
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
@@ -148,29 +148,34 @@
 }
 
 .section5-main {
-    font-family: DancingScript-b;
     line-height: 1.5em;
-    font-size: 2rem;
+/*    font-size: 2rem;*/
+    font-size: 400%
 }
 
 .section5-sub {
-    font-family: NanumMyeongjo-r;
+    font-family: fight;
     line-height: 1.5em;
     font-size: 1.3rem;
 }
 
 .section5-table {
-    font-family: NanumMyeongjo-r;
+    font-family: fight;
     line-height: 1.5em;
-    font-size: 1.3rem;
+    font-size: 2rem;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
 
-.sun{
+.section5-table tr .sun{
     color: red;
 }
 
+.section5-table tr .check{
+    color: white;
+    background-color: chocolate;
+    border-radius: 50px;
+}
 
 .snow-container{
     display: flex;

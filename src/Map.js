@@ -5,13 +5,12 @@ import naver_map from './image/naver-map.png';
 import kakao_map from './image/kakao-map.png';
 import google_map from './image/google-map.png';
 
-//const { Panel } = Collapse;
-const Panel = Collapse.Panel;
+const { Panel } = Collapse;
 
 function Map(){
     return (
         <div>
-            <div className='map-top'>
+            <div className='title'>
                 Location
             </div>
             <div className="map-text">
