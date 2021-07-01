@@ -20,19 +20,33 @@ function main(){
                     </div>
                 </div>
 
+<<<<<<< HEAD
                 <div className = "Main-text-group">
                     <p className = "Main-text-name">
                         김응수&nbsp;&nbsp;&nbsp;ෆ&nbsp;&nbsp;&nbsp;주수현
                     </p>
+=======
+            <div className = "Main-text-group">
+                <p className = "Main-text-name">
+                    김응수&nbsp;&nbsp;&nbsp;ෆ&nbsp;&nbsp;&nbsp;주수현
+                </p>
+>>>>>>> a2f00c852419acc60e44a99903c9fcb4841ebf3f
 
                     <p className = "Main-text">
                         2021. 09. 04 SAT AM 11:30
                     </p>
 
+<<<<<<< HEAD
                     <p className = "Main-text">
                         그랜드힐 컨벤션 2층 사브리나홀
                     </p>
                 </div>
+=======
+                <p className = "Main-text">
+                    그랜드힐 컨벤션 2층 사브리나홀
+                </p>
+            </div>
+>>>>>>> a2f00c852419acc60e44a99903c9fcb4841ebf3f
 
                 <row>
                     <img src = {eungself} className = "Self-photo-right" alt = "Eungsoo"/>
@@ -57,8 +71,16 @@ function main(){
                     김효식 ⋄ 신미경 <span>의 아들</span> 김응수 <br/>
                     주용회 ⋄ 고점숙 <span>의 딸</span> 주수현
                 </div>
+<<<<<<< HEAD
                 <a href="#popup--1" className = "btn--contact">신랑 신부에게 연락하기</a>
                 <div className = "popup--1"> 신랑신부에게 연락처 </div>
+=======
+
+                <a href="#popup--1" className = "btn--contact">신랑 신부에게 연락하기</a>
+                <div className = "popup--1"> 신랑신부에게 연락처 </div>
+               
+
+>>>>>>> a2f00c852419acc60e44a99903c9fcb4841ebf3f
             </section>
         </div>
     )
