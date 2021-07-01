@@ -19,6 +19,7 @@
     "react-naver-maps": "0.0.13",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
+    "reactjs-popup": "^2.0.4",
     "reactstrap": "^8.9.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.2"

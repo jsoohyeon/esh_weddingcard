@@ -1,4 +1,5 @@
 import React from "react";
+import Popup from "reactjs-popup";
 //import mainimg from './image/mainimg2.jpeg'
 import mainimg from './image/mainimg2_b.jpg'
 import eungself from './image/eungself.jpeg'
