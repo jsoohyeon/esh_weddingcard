@@ -2,8 +2,8 @@ import React from "react";
 import Popup from "reactjs-popup";
 //import mainimg from './image/mainimg2.jpeg'
 import mainimg from './image/mainimg2_b.jpg'
-import eungself from './image/eungself.jpeg'
-import hyeonself from './image/hyeonself.jpeg'
+import eungself from './image/portrait-eung.jpeg'
+import hyeonself from './image/portrait-soo.jpeg'
 
 function main(){
     return (
@@ -59,10 +59,10 @@ function main(){
                     주용회 ⋄ 고점숙 <span>의 딸</span> 주수현
                 </div>
 
-                <a href="#popup--1" className = "btn--contact">신랑 신부에게 연락하기</a>
-                <div className = "popup--1"> 신랑신부에게 연락처 </div>
-               
-
+                <Popup trigger={<button> 신랑 신부에게 연락하기 </button>} position="right center">
+                    <div>신랑 신부 연락처</div>
+                </Popup>
+              
             </section>
         </div>
     )
