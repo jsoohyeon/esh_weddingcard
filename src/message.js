@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import firebase from "./firebase";
+import firebase from "./firebase.js";
 
 function Message () {
     const [datas, setDatas] = useState([]);
@@ -13,8 +13,8 @@ function Message () {
         userRef.on('value', snapshot => {
             const users = snapshot.val();
             const usersData = [];
-            for (let user_id in users){
-                usersData.push({ ...users[user_id], user_id});
+            for (let id in users){
+                usersData.push({ ...users[id], id});
             }
             setDatas(usersData);
         })
