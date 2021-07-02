@@ -43,6 +43,11 @@
 }
 
 @font-face {
+  font-family: nanumMyeonjo;
+  src: url("./font/NanumMyeongjo.otf");
+}
+
+@font-face {
   font-family: Shadows;
   src: url("./font/ShadowsIntoLight-Regular.ttf");
 }

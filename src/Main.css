@@ -1,7 +1,11 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; }
-
+    font-size: 62.5%; 
+}
+* {
+    margin: 0;
+    padding: 0;
+}
     
 .Main-photo {
     height: 100vh;
@@ -12,10 +16,13 @@ html {
     align-items: center;
     position:relative;
     text-align:center;
+    
 }
 @media only screen and (min-width: 56.25em) {
     .Main-photo {
-      height: 80vh; } }
+        height: 80vh;
+        
+     } }
 
 .Main-photo-text {
     letter-spacing : -0.13em;
@@ -43,7 +50,7 @@ html {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: fight;
+    font-family: nanumMyeonjo;
     font-size: 2rem;
     margin-bottom: 2px;   
 }
@@ -73,15 +80,26 @@ html {
 
 .greeting {
     width: 100%;
-    padding: 3.2rem;
+    padding-top: 2rem;
     padding-bottom: 1.7rem;
     text-align: center;
-    background-color: lightgray;
     color: #4e4e4e;
 }
 @media only screen and (min-width: 56.25em) {
     .greeting {
         padding: 6rem;; } }
+
+
+.bg-video {
+    position: absolute;
+    opacity: 0.2;
+    z-index: -2;
+}
+.bg-video__content {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
 
 .greeting-main {
     font-size: 1.8rem;
