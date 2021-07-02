@@ -12,8 +12,8 @@ function App() {
 
     <div>
       <Main/>
-      <Calendar/>
       <Gallery/>
+      <Calendar/>
       <Map/>
     </div>
   );

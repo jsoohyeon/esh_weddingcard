@@ -22,7 +22,7 @@ const settings = {
 
 function Gallery(){
     return (
-        <div>
+        <div className = "gallery">
             <div className='title'>
                 Gallery
             </div>

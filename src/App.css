@@ -48,6 +48,11 @@
 }
 
 @font-face {
+  font-family: 'Noto Serif', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+}
+
+@font-face {
   font-family: Shadows;
   src: url("./font/ShadowsIntoLight-Regular.ttf");
 }
