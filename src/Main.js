@@ -40,7 +40,7 @@ function main(){
 
             <section className = "greeting">
                 <div className = "bg-video">
-                    <video src = {bgvideo} className ="bg-video__content" autoPlay muted roof></video>
+                    <video src = {bgvideo} className ="bg-video__content" autoPlay muted roof/>
                 </div>
 
                 <div className = "greeting__text">
