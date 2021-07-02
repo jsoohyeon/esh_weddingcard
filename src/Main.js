@@ -53,6 +53,7 @@ function main(){
                 <div className = "greeting-message-body">
                      기관과 불어 기관과 불어 광야에서 인생에 것이 어디 때문이다. 청춘 설레는 크고 커다란 청춘을 끓는 반짝이는 이 따뜻한 말이다. 인간의 천하를 앞이 것이다. 뜨고, 밝은 바이며, 충분히 들어 소금이라 하는 칼이다. 충분히 열매를 끝까지 있으며, 수 것이다. 무엇을 뜨고, 꽃이 위하여서, 광야에서 인생에 것이 어디 때문이다. 
                 </div>
+                
                 <span className = "greeting-span">&nbsp;</span>
                 <div className = "greeting-parent">
                     김효식 ⋄ 신미경 <span>의 아들</span> 김응수 <br/>
