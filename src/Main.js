@@ -1,9 +1,12 @@
 import React from "react";
 import Popup from "reactjs-popup";
+
 //import mainimg from './image/mainimg2.jpeg'
 import mainimg from './image/mainimg2_b.jpg'
 import eungself from './image/portrait-eung.jpeg'
 import hyeonself from './image/portrait-soo.jpeg'
+
+
 
 function main(){
     return (
@@ -20,10 +23,13 @@ function main(){
                         <span /*className = "Main-photo-text"*/>⎺⎺</span>
                     </div>
                 </div>
-
                 <div className = "Main-text-group">
+ 
+               
+
                     <p className = "Main-text-name">
                         김응수&nbsp;&nbsp;&nbsp;ෆ&nbsp;&nbsp;&nbsp;주수현
+                
                     </p>
 
                     <p className = "Main-text">
