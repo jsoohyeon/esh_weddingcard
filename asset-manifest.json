@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/invite_you/static/css/main.50c23fd9.chunk.css",
-    "main.js": "/invite_you/static/js/main.9b3ad713.chunk.js",
-    "main.js.map": "/invite_you/static/js/main.9b3ad713.chunk.js.map",
+    "main.css": "/invite_you/static/css/main.255b7e34.chunk.css",
+    "main.js": "/invite_you/static/js/main.0ad5201d.chunk.js",
+    "main.js.map": "/invite_you/static/js/main.0ad5201d.chunk.js.map",
     "runtime-main.js": "/invite_you/static/js/runtime-main.20f78cd3.js",
     "runtime-main.js.map": "/invite_you/static/js/runtime-main.20f78cd3.js.map",
     "static/css/2.54cadbe7.chunk.css": "/invite_you/static/css/2.54cadbe7.chunk.css",
@@ -12,27 +12,28 @@
     "static/js/3.69d4460d.chunk.js.map": "/invite_you/static/js/3.69d4460d.chunk.js.map",
     "index.html": "/invite_you/index.html",
     "static/css/2.54cadbe7.chunk.css.map": "/invite_you/static/css/2.54cadbe7.chunk.css.map",
-    "static/css/main.50c23fd9.chunk.css.map": "/invite_you/static/css/main.50c23fd9.chunk.css.map",
+    "static/css/main.255b7e34.chunk.css.map": "/invite_you/static/css/main.255b7e34.chunk.css.map",
     "static/js/2.686f224a.chunk.js.LICENSE.txt": "/invite_you/static/js/2.686f224a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/invite_you/static/media/힘내라는 말보단.8b26299d.ttf",
-    "static/media/gallery0102.ec503a56.jpg": "/invite_you/static/media/gallery0102.ec503a56.jpg",
-    "static/media/gallery0189.7e4a3208.jpg": "/invite_you/static/media/gallery0189.7e4a3208.jpg",
+    "static/media/gallery0102.d0fb9f43.jpg": "/invite_you/static/media/gallery0102.d0fb9f43.jpg",
+    "static/media/gallery0189.9b9abc93.jpg": "/invite_you/static/media/gallery0189.9b9abc93.jpg",
     "static/media/gallery0442.e3c2c2c1.jpg": "/invite_you/static/media/gallery0442.e3c2c2c1.jpg",
-    "static/media/gallery0454.b72eda07.jpg": "/invite_you/static/media/gallery0454.b72eda07.jpg",
-    "static/media/gallery1012.1891b5ec.jpg": "/invite_you/static/media/gallery1012.1891b5ec.jpg",
+    "static/media/gallery0454.8ab9303f.jpg": "/invite_you/static/media/gallery0454.8ab9303f.jpg",
+    "static/media/gallery1012.7f5bde6b.jpg": "/invite_you/static/media/gallery1012.7f5bde6b.jpg",
     "static/media/google-map.70175677.png": "/invite_you/static/media/google-map.70175677.png",
     "static/media/kakao-map.57f94644.png": "/invite_you/static/media/kakao-map.57f94644.png",
     "static/media/mainimg2_b.9b9abc93.jpg": "/invite_you/static/media/mainimg2_b.9b9abc93.jpg",
     "static/media/naver-map.13ab25c6.png": "/invite_you/static/media/naver-map.13ab25c6.png",
-    "static/media/portrait-eung.a790cdb6.jpg": "/invite_you/static/media/portrait-eung.a790cdb6.jpg",
-    "static/media/portrait-soo.113a7f45.jpg": "/invite_you/static/media/portrait-soo.113a7f45.jpg",
-    "static/media/slick-theme.css": "/invite_you/static/media/slick.c94f7671.ttf"
+    "static/media/portrait-eung.3f1699b5.jpeg": "/invite_you/static/media/portrait-eung.3f1699b5.jpeg",
+    "static/media/portrait-soo.b71b2bd9.jpeg": "/invite_you/static/media/portrait-soo.b71b2bd9.jpeg",
+    "static/media/slick-theme.css": "/invite_you/static/media/slick.c94f7671.ttf",
+    "static/media/video-1.76ef50c2.mp4": "/invite_you/static/media/video-1.76ef50c2.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.20f78cd3.js",
     "static/css/2.54cadbe7.chunk.css",
     "static/js/2.686f224a.chunk.js",
-    "static/css/main.50c23fd9.chunk.css",
-    "static/js/main.9b3ad713.chunk.js"
+    "static/css/main.255b7e34.chunk.css",
+    "static/js/main.0ad5201d.chunk.js"
   ]
 }
