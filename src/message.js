@@ -7,7 +7,7 @@ function Message () {
     const [user_name, setUserName] = useState('');
     const [content, setContent] = useState('');
     const [passwd, setPasswd] = useState('');
-    const userRef = firebase.database().ref('wedding-card');
+    const userRef = firebase.database().ref('wedding-card-8104a-default-rtdb');
 
     useEffect(() => {
         userRef.on('value', snapshot => {
@@ -18,7 +18,7 @@ function Message () {
             }
             setDatas(usersData);
         })
-    }, [userRef]);
+    },[]);
 
     const onChangeUserID = (e) => {
         setUserID(e.target.value);
@@ -51,10 +51,10 @@ function Message () {
     }
 
     const onUpdate = (user_id) => {
-        const [user] = datas.filter(el => el.user_id === user_id);
+        const [user] = datas.filter(el => el.id === user_id);
 
         userRef.child(user_id).update({
-            content: user.user_id++
+            content: user.content
         });
 
         setDatas(datas.map(el => el.id === user_id? {...el, content : el.user_id++}: el));
@@ -64,7 +64,7 @@ function Message () {
 
     return (
         <div>
-            {datas?.map(data => <div key={data.id}>
+            {datas?.map(data => <div key={data.user_id}>
             <div>
                 ID: {data.user_id}
                 <br />

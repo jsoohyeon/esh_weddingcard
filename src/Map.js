@@ -37,11 +37,12 @@ function Map(){
                     <NaverMapAPI/>
                 </RenderAfterNavermapsLoaded>
             </div>
-
-            <div className="map-center map-info"> 
-                <Collapse defaultActiveKey={['1']} onChange={callback}>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <div className="map-center map-info">
+            </div>
+                <Collapse defaultActiveKey={['1']} className="map-center map-info">
                     <Panel header="car" key="1">
-                        <p>car</p>
+                        <div>car</div>
                     </Panel>
                     <Panel header="subway" key="2">
                         <p>subway</p>
@@ -50,6 +51,7 @@ function Map(){
                         <p>bus</p>
                     </Panel>
                 </Collapse>
+            <div>
             </div>
         </div>
     )
