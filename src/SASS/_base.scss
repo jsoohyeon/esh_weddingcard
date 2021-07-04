@@ -1,0 +1,19 @@
+// COLOR VARIABLES
+
+
+// FONT VARIABLES
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {  
+  box-sizing: border-box;
+  font-size: 62.5%; 
+  font-weight: 300;
+  line-height: 1.6;
+}

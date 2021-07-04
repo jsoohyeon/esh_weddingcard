@@ -12,7 +12,6 @@
     "bootstrap": "^5.0.2",
     "firebase": "^8.6.8",
     "gh-pages": "^3.2.2",
-    "node-sass": "^6.0.0",
     "react": "^17.0.2",
     "react-animation": "^1.2.2",
     "react-blob": "^2.1.0",
@@ -28,12 +27,20 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": " react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
+    "start:sass": "npm-run-all --parallel watch:sass",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css -w",
+    "concat:css": "concat -o src/css/style.concat.css src/css/icon-font.css src/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/css/style.concat.css -o  src/css/style.prefix.css",
+    "compress:css": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "eslintConfig": {
     "extends": [
@@ -52,5 +59,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "compile": "0.0.2",
+    "concat": "^1.0.3",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1"
   }
 }

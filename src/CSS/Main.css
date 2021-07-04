@@ -9,7 +9,7 @@ html {
 }
     
 .Main-photo {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     object-fit: cover;
     display: flex;
@@ -138,6 +138,21 @@ html {
     text-decoration: none;
     border: none;
     box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
+}
+
+.popup-content {
+    width: 80vw;
+    height: 40%;
+    border-radius: 5px;
+    background: #fff;
+    color: #4e4e4e;
+    
+}
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+.popup-arrow {
+    visibility: hidden !important;
 }
 .gallery {
     display: inline-block;
