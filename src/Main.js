@@ -14,9 +14,9 @@ function main(){
     return (
         <div>
             <div>
-            <AnimateOnChange>
-  Sensational
-</AnimateOnChange>
+                <video autoPlay muted loop playsInline className = "bg-video">
+                    <source src = {bgvideo} type="video/mp4" className ="bg-video__content" />
+                </vidoe>
                 <div>
                     <img src = {mainimg} className = "Main-photo" alt = "main"/>
                     <div className="Main-photo-text">
@@ -44,7 +44,7 @@ function main(){
 
             <section className = "greeting">
                 <div className = "bg-video">
-                    <video src = {bgvideo} type="video/mp4" className ="bg-video__content" autoPlay muted loop playsInline/>
+                    <video src = {bgvideo} type="video/mp4" className ="bg-video__content" autoPlay muted loop play/>
                 </div>
 
                 <div className = "greeting__text">
