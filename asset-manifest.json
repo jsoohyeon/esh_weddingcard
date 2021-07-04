@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/invite_you/static/css/main.48e5dfaa.chunk.css",
-    "main.js": "/invite_you/static/js/main.04f27f28.chunk.js",
-    "main.js.map": "/invite_you/static/js/main.04f27f28.chunk.js.map",
+    "main.css": "/invite_you/static/css/main.dcc24615.chunk.css",
+    "main.js": "/invite_you/static/js/main.6adf15f3.chunk.js",
+    "main.js.map": "/invite_you/static/js/main.6adf15f3.chunk.js.map",
     "runtime-main.js": "/invite_you/static/js/runtime-main.2e6e91cc.js",
     "runtime-main.js.map": "/invite_you/static/js/runtime-main.2e6e91cc.js.map",
     "static/css/2.b8ea7809.chunk.css": "/invite_you/static/css/2.b8ea7809.chunk.css",
-    "static/js/2.b68cb1ad.chunk.js": "/invite_you/static/js/2.b68cb1ad.chunk.js",
-    "static/js/2.b68cb1ad.chunk.js.map": "/invite_you/static/js/2.b68cb1ad.chunk.js.map",
+    "static/js/2.7727ebe6.chunk.js": "/invite_you/static/js/2.7727ebe6.chunk.js",
+    "static/js/2.7727ebe6.chunk.js.map": "/invite_you/static/js/2.7727ebe6.chunk.js.map",
     "static/js/3.d9f01a71.chunk.js": "/invite_you/static/js/3.d9f01a71.chunk.js",
     "static/js/3.d9f01a71.chunk.js.map": "/invite_you/static/js/3.d9f01a71.chunk.js.map",
     "index.html": "/invite_you/index.html",
     "static/css/2.b8ea7809.chunk.css.map": "/invite_you/static/css/2.b8ea7809.chunk.css.map",
-    "static/css/main.48e5dfaa.chunk.css.map": "/invite_you/static/css/main.48e5dfaa.chunk.css.map",
-    "static/js/2.b68cb1ad.chunk.js.LICENSE.txt": "/invite_you/static/js/2.b68cb1ad.chunk.js.LICENSE.txt",
+    "static/css/main.dcc24615.chunk.css.map": "/invite_you/static/css/main.dcc24615.chunk.css.map",
+    "static/js/2.7727ebe6.chunk.js.LICENSE.txt": "/invite_you/static/js/2.7727ebe6.chunk.js.LICENSE.txt",
     "static/media/font.css": "/invite_you/static/media/힘내라는 말보단.8b26299d.ttf",
     "static/media/gallery0102.d0fb9f43.jpg": "/invite_you/static/media/gallery0102.d0fb9f43.jpg",
     "static/media/gallery0189.9b9abc93.jpg": "/invite_you/static/media/gallery0189.9b9abc93.jpg",
@@ -22,16 +22,19 @@
     "static/media/gallery1012.7f5bde6b.jpg": "/invite_you/static/media/gallery1012.7f5bde6b.jpg",
     "static/media/google-map.70175677.png": "/invite_you/static/media/google-map.70175677.png",
     "static/media/kakao-map.57f94644.png": "/invite_you/static/media/kakao-map.57f94644.png",
+    "static/media/leaf-left.2388b53c.png": "/invite_you/static/media/leaf-left.2388b53c.png",
+    "static/media/leaf-right.2be6085d.png": "/invite_you/static/media/leaf-right.2be6085d.png",
     "static/media/mainimg2_b.9b9abc93.jpg": "/invite_you/static/media/mainimg2_b.9b9abc93.jpg",
     "static/media/naver-map.13ab25c6.png": "/invite_you/static/media/naver-map.13ab25c6.png",
+    "static/media/phone-handset.49b65c75.svg": "/invite_you/static/media/phone-handset.49b65c75.svg",
     "static/media/slick-theme.css": "/invite_you/static/media/slick.c94f7671.ttf",
     "static/media/video-1.76ef50c2.mp4": "/invite_you/static/media/video-1.76ef50c2.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.2e6e91cc.js",
     "static/css/2.b8ea7809.chunk.css",
-    "static/js/2.b68cb1ad.chunk.js",
-    "static/css/main.48e5dfaa.chunk.css",
-    "static/js/main.04f27f28.chunk.js"
+    "static/js/2.7727ebe6.chunk.js",
+    "static/css/main.dcc24615.chunk.css",
+    "static/js/main.6adf15f3.chunk.js"
   ]
 }
