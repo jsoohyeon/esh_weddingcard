@@ -44,7 +44,7 @@ function main(){
 
             <section className = "greeting">
                 <div className = "bg-video">
-                    <video src = {bgvideo} type="video/mp4" className ="bg-video__content" autoPlay muted loop playsinline/>
+                    <video src = {bgvideo} type="video/mp4" className ="bg-video__content" autoPlay muted loop playsInline/>
                 </div>
 
                 <div className = "greeting__text">
