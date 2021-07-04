@@ -1,12 +1,16 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import { AnimateOnChange } from 'react-animation';
-
 //import mainimg from './image/mainimg2.jpeg'
-import mainimg from './image/mainimg2_b.jpg'
+import mainimg from './image/mainimg2_b.jpg';
+import leafleft from './image/leaf-left.png';
+import leafright from './image/leaf-right.png';
 //import eungself from './image/portrait-eung.jpeg'
 //import hyeonself from './image/portrait-soo.jpeg'
 import bgvideo from './movie/video-1.mp4'
+import  phone from "./image/SVG/phone-handset.svg";
+
+
 
 
 
@@ -18,7 +22,8 @@ function main(){
                     <img src = {mainimg} className = "Main-photo" alt = "main"/>
                     <div className="Main-photo__text">
                       <h1>0904</h1>
-                      <h2>Wedding day</h2>
+                      <span>&nbsp;</span>
+                      <h2>D - {getDDay()}<br/>Wedding day</h2>
                     </div>
                 </div>
                 
@@ -59,17 +64,57 @@ function main(){
                         주용회 ⋄ 고점숙 <span>의 딸</span> 주수현
                     </div>
 
-                    <Popup trigger={<button className="btn__contact"> 신랑 신부에게 연락하기 </button>} Open Modal>
-                        <div className = "popup-content">신랑 신부 연락처</div>
+                    <Popup trigger={<button className="btn__contact"> 신랑 신부에게 연락하기 </button>} >
+                        <div className = "popup__content">
+                            <img src = {leafleft} className = "popup__content-leaf-1" />
+                            <div className = "popup__content-sub-1">
+                                신랑 김응수 
+                                <a href="tel:010-3389-0910"> 
+                                    <img src = {phone} className = "popup__content-icon" alt = "phone"/>
+                                </a>
+                                <a href="sms:010-3389-0910"> 
+                                    <img src = {phone} className = "popup__content-icon" alt = "phone"/>
+                                </a>
+                            </div>
+                            <div className = "popup__content-sub-2">
+                                신부 주수현
+                            </div>
+                            <img src = {leafright} className = "popup__content-leaf-2" />
+                        </div>
                     </Popup>
                     <Popup trigger={<button className="btn__contact"> 부모님에게 연락하기 </button>} position="right center">
-                        <div>신랑 신부 연락처</div>
+                    <div className = "popup__content">
+                            <img src = {leafleft} className = "popup__content-leaf-1" />
+                            <div className = "popup__content-sub-1">
+                                신랑 김응수 
+                                <a href="tel:010-3389-0910"> 
+                                    <img src = {phone} className = "popup__content-icon" alt = "phone"/>
+                                </a>
+                                <a href="sms:010-3389-0910"> 
+                                    <img src = {phone} className = "popup__content-icon" alt = "phone"/>
+                                </a>
+                            </div>
+                            <div className = "popup__content-sub-2">
+                                신부 주수현
+                            </div>
+                            <img src = {leafright} className = "popup__content-leaf-2" />
+                        </div>
                     </Popup>
                 
                 </div>
             </section>
         </div>
     )
+}
+
+function getDDay() {
+    const setDate = new Date("2021-09-04T11:30:00+0900");
+    const now = new Date();
+    const distance = setDate - now;
+
+    const day = Math.floor(distance / (1000*60*60*24));
+    
+    return day;
 }
 
 export default main
