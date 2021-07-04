@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/invite_you/static/css/main.339fbd48.chunk.css",
-    "main.js": "/invite_you/static/js/main.6adf15f3.chunk.js",
-    "main.js.map": "/invite_you/static/js/main.6adf15f3.chunk.js.map",
+    "main.css": "/invite_you/static/css/main.c2dfca89.chunk.css",
+    "main.js": "/invite_you/static/js/main.b655b6ce.chunk.js",
+    "main.js.map": "/invite_you/static/js/main.b655b6ce.chunk.js.map",
     "runtime-main.js": "/invite_you/static/js/runtime-main.2e6e91cc.js",
     "runtime-main.js.map": "/invite_you/static/js/runtime-main.2e6e91cc.js.map",
     "static/css/2.b8ea7809.chunk.css": "/invite_you/static/css/2.b8ea7809.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.d9f01a71.chunk.js.map": "/invite_you/static/js/3.d9f01a71.chunk.js.map",
     "index.html": "/invite_you/index.html",
     "static/css/2.b8ea7809.chunk.css.map": "/invite_you/static/css/2.b8ea7809.chunk.css.map",
-    "static/css/main.339fbd48.chunk.css.map": "/invite_you/static/css/main.339fbd48.chunk.css.map",
+    "static/css/main.c2dfca89.chunk.css.map": "/invite_you/static/css/main.c2dfca89.chunk.css.map",
     "static/js/2.7727ebe6.chunk.js.LICENSE.txt": "/invite_you/static/js/2.7727ebe6.chunk.js.LICENSE.txt",
     "static/media/font.css": "/invite_you/static/media/힘내라는 말보단.8b26299d.ttf",
     "static/media/gallery0102.d0fb9f43.jpg": "/invite_you/static/media/gallery0102.d0fb9f43.jpg",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.2e6e91cc.js",
     "static/css/2.b8ea7809.chunk.css",
     "static/js/2.7727ebe6.chunk.js",
-    "static/css/main.339fbd48.chunk.css",
-    "static/js/main.6adf15f3.chunk.js"
+    "static/css/main.c2dfca89.chunk.css",
+    "static/js/main.b655b6ce.chunk.js"
   ]
 }
