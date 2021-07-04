@@ -16,7 +16,7 @@ function main(){
             <div>
                 <video autoPlay muted loop playsInline className = "bg-video">
                     <source src = {bgvideo} type="video/mp4" className ="bg-video__content" />
-                </vidoe>
+                </video>
                 <div>
                     <img src = {mainimg} className = "Main-photo" alt = "main"/>
                     <div className="Main-photo-text">
