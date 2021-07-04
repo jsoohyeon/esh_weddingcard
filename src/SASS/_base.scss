@@ -1,7 +1,10 @@
 // COLOR VARIABLES
-
+$color-primary-gray: #4e4e4e;
+$color-white: #fff;
 
 // FONT VARIABLES
+$font-primary: 'Noto Serif', serif;
+
 
 *,
 *::after,
@@ -9,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  
 }
 
 body {  
@@ -16,4 +20,7 @@ body {
   font-size: 62.5%; 
   font-weight: 300;
   line-height: 1.6;
+
+
+  font-family: $font-primary;
 }
