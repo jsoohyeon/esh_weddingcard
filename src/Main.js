@@ -59,7 +59,7 @@ function main(){
                         주용회 ⋄ 고점숙 <span>의 딸</span> 주수현
                     </div>
 
-                    <Popup trigger={<button className="btn__contact"> 신랑 신부에게 연락하기 </button>} popposition="bottom center">
+                    <Popup trigger={<button className="btn__contact"> 신랑 신부에게 연락하기 </button>} Open Modal>
                         <div className = "popup-content">신랑 신부 연락처</div>
                     </Popup>
                     <Popup trigger={<button className="btn__contact"> 부모님에게 연락하기 </button>} position="right center">

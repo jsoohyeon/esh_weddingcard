@@ -1,5 +1,6 @@
 import './App.css';
 import './CSS/style.css';
+import './CSS/font.css';
 import Main from './Main.js';
 import Map from './Map.js';
 import Gallery from './Gallery.js'

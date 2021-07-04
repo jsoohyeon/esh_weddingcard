@@ -12,44 +12,44 @@
   &__text {
     text-align: center;
     position: absolute;
-    top:15%;
+    top:12%;
     left: 50%;
     transform: translateX(-50%);
 
     h1{
       color: $color-primary-gray;
       font-size: 1rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     h2{
       color: $color-white;
+      font-size: 0.8rem
     }
   }  
 }
 
-.main-text {
+.Main-text {
     height: min-content;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Noto Serif', serif ;
     font-weight: 300;
-    margin: 2.4rem;
+    margin: 2rem;
     padding: 2rem;
     border: 1px #4e4e4e solid;
     border-radius: 2px;
 
     &__name {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-bottom: 0.8rem;   
     }
   
     &__sub{
       text-align: center;
-      font-size: 1.7rem;
+      font-size: 1rem;
       margin-bottom: 2px;   
     }
   }

@@ -3,8 +3,7 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+  padding: 0; }
 
 body {
   box-sizing: border-box;
@@ -25,35 +24,35 @@ body {
   .Main-photo__text {
     text-align: center;
     position: absolute;
-    top: 15%;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%); }
     .Main-photo__text h1 {
       color: #4e4e4e;
       font-size: 1rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 1.5rem; }
     .Main-photo__text h2 {
-      color: #fff; }
+      color: #fff;
+      font-size: 0.8rem; }
 
-.main-text {
+.Main-text {
   height: min-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: 'Noto Serif', serif;
   font-weight: 300;
-  margin: 2.4rem;
+  margin: 2rem;
   padding: 2rem;
   border: 1px #4e4e4e solid;
   border-radius: 2px; }
-  .main-text__name {
+  .Main-text__name {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0.8rem; }
-  .main-text__sub {
+  .Main-text__sub {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1rem;
     margin-bottom: 2px; }
 
 .Gallery-photo {
@@ -67,12 +66,35 @@ body {
 .greeting {
   width: 100%;
   height: 100%;
-  padding-bottom: 1.7rem;
   text-align: center;
   color: #4e4e4e;
-  font-family: 'Noto Serif', serif;
   position: relative;
   display: flex; }
+  .greeting__text {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    margin: 1.5rem;
+    padding: 2rem;
+    position: relative; }
+  .greeting__message-head {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .greeting__message-body {
+    font-size: 1.3rem; }
+  .greeting-span::before {
+    content: "";
+    width: 10rem;
+    height: .15rem;
+    background-color: #666;
+    display: inline-block;
+    margin-bottom: 2rem; }
+  .greeting-parent {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin-bottom: 3.5rem; }
+    .greeting-parent span {
+      font-size: 1rem; }
 
 .bg-video__content {
   opacity: 0.8;
@@ -82,45 +104,12 @@ body {
   width: 100%;
   object-fit: cover; }
 
-.greeting__text {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.75);
-  margin: 3rem;
-  padding: 3rem;
-  position: relative; }
-
-.greeting__message-head {
-  font-size: 2.5rem;
-  font-weight: bold; }
-
-.greeting__message-body {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 2rem; }
-
-.greeting-span::before {
-  content: "";
-  width: 10rem;
-  height: .2rem;
-  background-color: #4e4e4e;
-  display: inline-block;
-  margin-bottom: 3.5rem; }
-
-.greeting-parent {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  margin-bottom: 3.5rem; }
-
-.greeting-parent span {
-  font-size: 1.5rem; }
-
 .btn__contact {
   display: inline-block;
   width: 70vw;
-  height: 4rem;
-  font-size: 1.3rem;
+  height: 3rem;
+  font-size: 1rem;
   color: #4e4e4e;
-  font-weight: bold;
   border-radius: 1.5rem;
   background-color: #fff;
   margin-bottom: 1.5rem;
