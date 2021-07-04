@@ -39,7 +39,7 @@ function main(){
                 
             </div>
 
-                <video autoPlay muted loop play playsInline className = "bg-video__content">
+                <video autoPlay muted loop playsInline  className = "bg-video__content">
                     <source src = {bgvideo} type="video/mp4"/>
                 </video>
             <section className = "greeting">
