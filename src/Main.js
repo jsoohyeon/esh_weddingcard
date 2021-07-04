@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
+import { AnimateOnChange } from 'react-animation';
 
 //import mainimg from './image/mainimg2.jpeg'
 import mainimg from './image/mainimg2_b.jpg'
@@ -13,6 +14,9 @@ function main(){
     return (
         <div>
             <div>
+            <AnimateOnChange>
+  Sensational
+</AnimateOnChange>
                 <div>
                     <img src = {mainimg} className = "Main-photo" alt = "main"/>
                     <div className="Main-photo-text">
@@ -40,7 +44,7 @@ function main(){
 
             <section className = "greeting">
                 <div className = "bg-video">
-                    <video src = {bgvideo} type="video/mp4" className ="bg-video__content" autoPlay muted roof/>
+                    <video src = {bgvideo} type="video/mp4" className ="bg-video__content" autoPlay muted loop playsinline/>
                 </div>
 
                 <div className = "greeting__text">
