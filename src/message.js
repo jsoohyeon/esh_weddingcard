@@ -7,18 +7,20 @@ function Message () {
     const [user_name, setUserName] = useState('');
     const [content, setContent] = useState('');
     const [passwd, setPasswd] = useState('');
-    const userRef = firebase.database().ref('wedding-card-8104a-default-rtdb');
+    const userRef = firebase.database().ref('users');
+
+ 
 
     useEffect(() => {
         userRef.on('value', snapshot => {
             const users = snapshot.val();
-            const usersData = [];
-            for (let id in users){
-                usersData.push({ ...users[id], id});
+            const usersData =[];
+            for (let user_id in users){
+                usersData.push({ ...users[user_id], user_id});
             }
             setDatas(usersData);
         })
-    },[]);
+    },[setDatas]);
 
     const onChangeUserID = (e) => {
         setUserID(e.target.value);
@@ -74,12 +76,12 @@ function Message () {
                 <br />
                 메세지: {data.content}
             </div>
-            <button onClick={() => onUpdate(data.user_id)}>수정</button>
+            {/*<button onClick={() => onUpdate(data.user_id)}>수정</button>*/}
             <button onClick={() => onClickRemove(data.user_id)}>삭제</button>
             <hr />
         </div>
         )}
-        <input onChange={onChangeUserID} name='user_id' placeholder='user' value={user_id}></input>
+        {/*<input onChange={onChangeUserID} name='user_id' placeholder='user' value={user_id}></input>*/}
         <br/>
         <input onChange={onChangeUserName} name='user_name' placeholder='name' value={user_name}></input>
         <br/>

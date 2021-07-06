@@ -1,7 +1,13 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; }
-
+    font-size: 62.5%; 
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+    
 .Main-photo {
     height: 100vh;
     width: 100%;
@@ -12,99 +18,100 @@ html {
     position:relative;
     text-align:center;
 }
-@media only screen and (min-width: 56.25em) {
-    .Main-photo {
-      height: 80vh; } }
+
 
 .Main-photo-text {
-    letter-spacing : -0.13em;
-    margin-right: 0.5em;
-    margin-top: 0.5em;
-    text-align: right;
-    font-size: 2.3rem;
+    text-align: center;
     position: absolute;
-    top:1%;
-    right:6%;
-    color: #fff
+    top:15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Noto Serif', serif ;
+}
+
+.Main-photo-text h1{
+    color: #4e4e4e;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+.Main-photo-text h2{
+    color: #fff;
+    
 }
 
 .Main-text-group {
-    height: 30vh;
+    height: min-content;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap: wrap;
     justify-content: center;
-}
-@media only screen and (min-width: 56.25em) {
-    .Main-text-group {
-      height: 20vh; } }
-
-.Main-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: fight;
-    font-size: 2rem;
-    margin-bottom: 2px;   
+    font-family: 'Noto Serif', serif ;
+    font-weight: 300;
+    margin: 2.4rem;
+    padding: 2rem;
+    border: 1px #4e4e4e solid;
+    border-radius: 2px;
 }
 
 .Main-text-name {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    font-family: fight;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;   
+    font-size: 2rem;
+    margin-bottom: 0.8rem;   
 }
 
+.Main-text {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 2px;   
+}
 
-.Self-photo-right {
-    margin-left : 5%;
-    margin-right: 2.5%;
-    width : 42.5%;
-    align-items: center;
-}
-.Self-photo-left {
-    margin-right: 5%;
-    margin-left: 2.5%;
-    width : 42.5%;
-    align-items: center;
-}
 
 .greeting {
     width: 100%;
-    padding: 3.2rem;
     padding-bottom: 1.7rem;
     text-align: center;
-    background-color: lightgray;
     color: #4e4e4e;
-}
-@media only screen and (min-width: 56.25em) {
-    .greeting {
-        padding: 6rem;; } }
-
-.greeting-main {
-    font-size: 1.8rem;
-    margin-bottom: 3.5rem;
-    color: #626262;
+    font-family: 'Noto Serif', serif ;
+    position: relative;
+    display: flex;
 }
 
-.greeting-message-head {
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
+.bg-video {
+    opacity: 0.8;
+    z-index: -2;
+}
+.bg-video__content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.greeting__text {
+    position: absolute;
+    background: rgba(255, 255, 255, .75);
+    margin: 3rem;
+    padding: 3rem;
+    position: relative;
+
+}
+
+.greeting__message-head {
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
-.greeting-message-body {
-    font-size: 1.8rem;
-    margin-bottom: 3.5rem;
+.greeting__message-body {
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 2rem
 }
 
 .greeting-span::before {
     content: "";
     width: 10rem;
-    height: .3rem;
-    background-color: #fff;
+    height: .2rem;
+    background-color: #4e4e4e;
     display: inline-block;
     margin-bottom: 3.5rem;
 }
@@ -119,7 +126,7 @@ html {
     font-size: 1.5rem;
 }
 
-.btn--contact {
+.btn__contact {
     display: inline-block;
     width: 70vw;
     height: 4rem;
@@ -130,28 +137,31 @@ html {
     background-color: #fff;
     margin-bottom: 1.5rem;
     text-decoration: none;
+    border: none;
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
 }
-@media only screen and (min-width: 56.25em) {
-    .btn--contact:visited {
-        width: 30rem;
-        margin-bottom: 0rem;} }
+.gallery {
+    display: inline-block;
+    width: 100vw;
 
-.popup--1 {
-    visibility: hidden;
 }
-
-.popup--1:target {
-    visibility: visible;
-}
-
 .Gallery-photo {
     width: 100%;
     align-items:center;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: black!important;;
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  font-size: inherit;
+  color: currentColor;
+}
+
+.ant-carousel .slick-dots li button {
+    margin: 30;
+    background: rgb(36, 34, 34) !important;
 }
 
 .map-icon {
@@ -177,6 +187,7 @@ html {
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
+
 .map-text {
     display: flex;
     flex-direction: column;
