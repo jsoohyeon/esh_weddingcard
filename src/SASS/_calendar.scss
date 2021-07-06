@@ -1,0 +1,92 @@
+
+.Calendar {
+  position: relative;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  height: max-content;
+
+  &__head {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    line-height: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__photo {
+    width: 53vw;
+    z-index: -2;
+
+    &-1, &-2 {
+      width: 100%;
+    }
+  }
+
+  &__table {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    border: 1px solid #ccc ;
+    border-radius: 2px;
+    padding: 2.3rem;
+    right: 2rem;
+    top: 40%;
+
+    &-month {
+      text-align: center;
+      font-size: 3rem;
+      border-bottom: 2px solid $color-primary-gray;
+    }
+
+    &-sub {
+      font-size: 1rem;
+    }
+  }
+  
+  &__sub {
+    margin-top: 3.4rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    font-size: 5px;
+    line-height: 9px;
+    color: #ccc;
+  }
+}
+
+.section5-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section5-main {
+  line-height: 1.5em;
+/*    font-size: 2rem;*/
+  font-size: 400%
+}
+
+.section5-sub {
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section5-table {
+  line-height: 1.5em;
+  font-size: 2rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.section5-table tr .sun{
+  color: red;
+}
+
+.section5-table tr .check{
+  color: white;
+  background-color: chocolate;
+  border-radius: 50px;
+}
