@@ -1,0 +1,15 @@
+.gallery {
+  display: inline-block;
+  width: 100vw;
+
+}
+
+.Gallery-photo {
+  width: 100%;
+  align-items:center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black!important;;
+}

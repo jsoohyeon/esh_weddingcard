@@ -1,0 +1,35 @@
+
+@font-face {
+  font-family: fight;
+  src: url("./font/힘내라는 말보단.ttf");
+}
+
+@font-face {
+  font-family: nanumMyeonjo;
+  src: url("./font/NanumMyeongjo.otf");
+}
+
+@font-face {
+  font-family: 'Noto Serif', serif;
+  src: url("./font/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: Shadows;
+  src: url("./font/ShadowsIntoLight-Regular.ttf");
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url("./font/Pacifico-Regular.ttf");
+}
+
+@font-face{
+  font-family: AmaticSC;
+  src: url("./font/AmaticSC-Regular.ttf");
+}
+
+@font-face{
+  font-family: YesevaOne;
+  src: url("./font/YesevaOne-Regular.ttf");
+}

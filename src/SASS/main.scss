@@ -1,0 +1,105 @@
+@import "base";
+
+@import "header";
+@import "gallery";
+@import "calendar";
+@import "greeting";
+@import "map";
+@import "typography";
+
+
+
+.cover-container {
+  max-width: 42em;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.section5 {
+  background-color: #f9f9f9;
+}
+
+.section5-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section5-main {
+  line-height: 1.5em;
+/*    font-size: 2rem;*/
+  font-size: 400%
+}
+
+.section5-sub {
+  font-family: fight;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section5-table {
+  font-family: fight;
+  line-height: 1.5em;
+  font-size: 2rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.section5-table tr .sun{
+  color: red;
+}
+
+.section5-table tr .check{
+  color: white;
+  background-color: chocolate;
+  border-radius: 50px;
+}
+
+.snow-container{
+  display: flex;
+  justify-content: space-between;
+}
+.snow-flake {
+  color: coral;
+  animation: fall 3.5s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(0, 70px);
+    opacity: 0;
+  }
+}
