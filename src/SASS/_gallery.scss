@@ -1,7 +1,8 @@
 .gallery {
-  display: inline-block;
+  position: relative;
   width: 100vw;
-
+  padding: 2rem;
+  background-color: #f9f9f9;
 }
 
 .Gallery-photo {

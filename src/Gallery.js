@@ -11,8 +11,10 @@ import gallery1012 from './image/gallery1012.jpg'
 function Gallery(){
     return (
         <div className = "gallery">
-            <div className='title'>
+            <div className='head'>
                 Gallery
+
+            <span className="head__line">&nbsp;</span>
             </div>
             <div align='center'>
                 <Carousel arrows prevArrow={<LeftCircleOutlined/>} nextArrow={<RightCircleOutlined/>} swipeToSlide draggable style={{width:'80%'}}>

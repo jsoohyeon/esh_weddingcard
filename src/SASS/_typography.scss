@@ -6,6 +6,29 @@
   height: 40vmin;
   pointer-events: none;
 }
+.head {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  line-height: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  position: relative;
+
+  &__line::before {
+    content: "";
+    width: 10rem;
+    height: .15rem;
+    background-color: $color-primary-gray-2;
+    display: inline-block;
+    margin: 2.5rem;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 1.5rem;
+    right: 0;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
