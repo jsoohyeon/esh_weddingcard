@@ -7,15 +7,16 @@ import calPhoto2 from './image/CH5_0941.jpg'
 function Calendar(){
     return (
         <div className="Calendar">
-            <div className="Calendar__head">
+            <div className="head">
                 save <br/>our date
+                <span className="head__line">&nbsp;</span>
             </div>
             <div className="Calendar__photo">
                 <img src = {calPhoto1} className="Calendar__photo-1" />
                 <img src = {calPhoto2} className="Calendar__photo-2" />
             </div>
             <div className="Calendar__table">
-                <p className="Calendar__table-month">9</p>
+                <p className="Calendar__table-month">09</p>
                 <table class="Calendar__table-main">
                     <tr align='center'>
                         <td class="sun">S</td>
@@ -72,7 +73,7 @@ function Calendar(){
                         <td></td>
                     </tr>
                 </table>
-                <p class="Calendar__table-sub">09월 04일 · 토요일 · 오전 11:30 응수 ❤️ 수현 D - {getDDay()}</p>
+                {/* <p class="Calendar__table-sub">09월 04일 · 토요일 · 오전 11:30 응수 ❤️ 수현 D - {getDDay()}</p> */}
             </div>
             <div className="Calendar__sub">
                 <p>eunsoo.soohyeon </p>

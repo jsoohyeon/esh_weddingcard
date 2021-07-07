@@ -4,6 +4,7 @@ import mainimg from './image/mainimg2_b.jpg';
 //import eungself from './image/portrait-eung.jpeg'
 //import hyeonself from './image/portrait-soo.jpeg'
 import bgvideo from './movie/video-1.mp4'
+import bgimg from './image/flower-1.jpg'
 
 
 
@@ -41,7 +42,7 @@ function main(){
 
             <section className = "greeting">
                 <video autoPlay muted loop playsInline  className = "bg-video__content">
-                    <source src = {bgvideo} type="video/mp4"/>
+                    <source src = {bgvideo} type="video/mp4" alt = {bgimg}/>
                 </video>
 
                 <div className = "greeting__text">
