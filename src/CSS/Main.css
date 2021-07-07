@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; 
+    font-size: 62.5% !important; 
     
 }
 * {
@@ -146,8 +146,8 @@ html {
     border-radius: 5px;
     background: #fff;
     color: #4e4e4e;
-    
 }
+
 .popup-overlay {
     background: rgba(0, 0, 0, 0.5);
   }
@@ -300,15 +300,6 @@ html {
     background-color: chocolate;
     border-radius: 50px;
 }
-
-.snow-container{
-    display: flex;
-    justify-content: space-between;
-  }
-  .snow-flake {
-    color: coral;
-    animation: fall 3.5s linear infinite;
-  }
 
   @keyframes fall {
     0% {

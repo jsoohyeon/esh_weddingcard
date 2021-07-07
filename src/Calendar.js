@@ -3,13 +3,13 @@ import React from "react";
 
 function Calendar(){
     return (
-        <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"  align='center'>
+        <div className="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"  align='center'>
             <br/><br/>
-            <p class="section5-title section5-main title">Date</p>
-            <p class="section5-title section5-sub mt-0">09월 04일 · 토요일 · 오전 11:30</p>
-            <table class="wow fadeInUp section5-title section5-table">
+            <p className="section5-title section5-main title">Date</p>
+            <p className="section5-title section5-sub mt-0">09월 04일 · 토요일 · 오전 11:30</p>
+            <table className="wow fadeInUp section5-title section5-table">
                 <tr align='center'>
-                    <td class="sun">S</td>
+                    <td className="sun">S</td>
                     <td>M</td>
                     <td>T</td>
                     <td>W</td>
@@ -18,16 +18,16 @@ function Calendar(){
                     <td>S</td>
                 </tr>
                 <tr align='center'>
-                    <td class="sun"></td>
+                    <td className="sun"></td>
                     <td></td>
                     <td></td>
                     <td>1</td>
                     <td>2</td>
                     <td>3</td>
-                    <td class="check">4</td>
+                    <td className="check">4</td>
                 </tr>
                 <tr align='center'>
-                    <td class="sun">5</td>
+                    <td className="sun">5</td>
                     <td>6</td>
                     <td>7</td>
                     <td>8</td>
@@ -36,7 +36,7 @@ function Calendar(){
                     <td>11</td>
                 </tr>
                 <tr align='center'>
-                    <td class="sun">12</td>
+                    <td className="sun">12</td>
                     <td>13</td>
                     <td>14</td>
                     <td>15</td>
@@ -45,7 +45,7 @@ function Calendar(){
                     <td>18</td>
                 </tr>
                 <tr align='center'>
-                    <td class="sun">19</td>
+                    <td className="sun">19</td>
                     <td>20</td>
                     <td>21</td>
                     <td>22</td>
@@ -54,7 +54,7 @@ function Calendar(){
                     <td>25</td>
                 </tr>
                 <tr align='center'>
-                    <td class="sun">26</td>
+                    <td className="sun">26</td>
                     <td>27</td>
                     <td>28</td>
                     <td>29</td>
@@ -63,7 +63,7 @@ function Calendar(){
                     <td></td>
                 </tr>
             </table>
-            <p class="wow fadeInUp section5-title section5-sub">응수 ❤️ 수현 D - {getDDay()}</p>
+            <p className="wow fadeInUp section5-title section5-sub">응수 ❤️ 수현 D - {getDDay()}</p>
             <br/><br/><br/><br/><br/>
         </div>
     )
