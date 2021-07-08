@@ -503,7 +503,6 @@ body {
   border-top: 0;
   border-bottom: 1px #4e4e4e solid;
   height: min-content;
-  width: 90vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -512,7 +511,7 @@ body {
   margin: 2rem; }
   .congrats__message-list__name {
     font-weight: bold;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     margin-bottom: 0.8rem;
     float: left; }
   .congrats__message-list__date {
