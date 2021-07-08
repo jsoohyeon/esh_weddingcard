@@ -1,8 +1,13 @@
 .gallery {
   position: relative;
   width: 100vw;
+  height: 90vh;
   padding: 2rem;
   background-color: #f9f9f9;
+
+  &__photo {
+    margin-top: 10rem;
+  }
 }
 
 .Gallery-photo {

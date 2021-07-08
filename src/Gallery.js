@@ -13,10 +13,10 @@ function Gallery(){
         <div className = "gallery">
             <div className='head'>
                 Gallery
-
             <span className="head__line">&nbsp;</span>
             </div>
-            <div align='center'>
+
+            <div className="gallery__photo" align='center'>
                 <Carousel arrows prevArrow={<LeftCircleOutlined/>} nextArrow={<RightCircleOutlined/>} swipeToSlide draggable style={{width:'80%'}}>
                     <div>
                         <img src = {gallery0102} className="Gallery-photo" alt = "main"/>

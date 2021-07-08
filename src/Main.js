@@ -41,10 +41,11 @@ function main(){
             </div>
 
             <section className = "greeting">
-                <video autoPlay muted loop playsInline  className = "bg-video__content">
-                    <source src = {bgvideo} type="video/mp4" alt = {bgimg}/>
-                </video>
-
+            <div className='head'>
+                Invitaion<br/>card
+            <span className="head__line">&nbsp;</span>
+            </div>
+            
                 <div className = "greeting__text">
                     
                     <div className = "greeting__message-head">
