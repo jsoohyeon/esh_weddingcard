@@ -21,6 +21,7 @@ function main(){
                       <span>&nbsp;</span>
                       <h2>D - {getDDay()}<br/>Wedding day</h2>
                     </div>
+                <h6 className = "Main-photo__sub">Please join us for the wedding</h6>
                 </div>
                 
                 <div className = "Main-text">

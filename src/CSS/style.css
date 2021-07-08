@@ -45,17 +45,21 @@ body {
       background-color: #666;
       display: inline-block;
       margin: 1rem; }
+  .Main-photo__sub {
+    color: #666;
+    font-size: 4px !important;
+    text-align: center;
+    letter-spacing: 8px; }
 
 .Main-text {
   height: min-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: end;
   font-weight: 300;
   margin: 2rem;
   padding: 2rem;
-  border: 1px #4e4e4e solid;
   border-radius: 2px; }
   .Main-text__name {
     text-align: center;
@@ -477,6 +481,34 @@ body {
   src: url("./font/YesevaOne-Regular.ttf");
 }
 */
+.popup__content-add {
+  border: 1px;
+  border-bottom-color: black; }
+
+.congrats__message-del {
+  width: 50vw;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 10rem;
+  background-color: #4e4e4e;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.congrats__message-popup {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: grid; }
+
 .cover-container {
   max-width: 42em; }
 
