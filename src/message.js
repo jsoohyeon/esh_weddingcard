@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import firebase from "./firebase.js";
 import moment from 'moment';
 import Popup from "reactjs-popup";
+import { CloseOutlined, NotificationOutlined } from '@ant-design/icons'
+
 
 function Message () {
     const [datas, setDatas] = useState([]);
@@ -44,15 +46,27 @@ function Message () {
 
     const onClickAdd = () => {
         const userData = {user_id, user_name, content, passwd, reg_dttm};
-        userData.reg_dttm = moment().format('YYYY-MM-DD HH:mm:ss');
 
-        setDttm(userData.reg_dttm);
-        userRef.push(userData);
-        setUserID('');
-        setUserName('');
-        setContent('');
-        setPasswd('');
-        setDttm('');
+        if(userData.user_name === ''){
+            alert('이름을 입력해주세요');
+        }
+        else if(userData.content === ''){
+            alert('축하 메세지를 입력해주세요.');
+        }
+        else if(userData.passwd === ''){
+            alert('비밀번호를 입력해주세요');
+        }
+        else {
+            userData.reg_dttm = moment().format('YYYY-MM-DD HH:mm:ss');
+
+            setDttm(userData.reg_dttm);
+            userRef.push(userData);
+            setUserID('');
+            setUserName('');
+            setContent('');
+            setPasswd('');
+            setDttm('');
+        }
     }
 
     const onClickRemove = (user_id, passwd, chkpasswd) => {
@@ -83,25 +97,27 @@ function Message () {
                     축하메세지:&nbsp;
                     <input style ={{border:0}} onChange={onChangeContent} name='content' value={content}/>
                 </p>
-                <button onClick={onClickAdd}>추가하기</button>
+                <button onClick={onClickAdd}>등록하기</button>
 
                 <br/><br/>
 
                 {datas?.map(data =>
                 <div key={data.user_id}>
-                    <div className="Main-text">
+                    <div className="congrats__message-list">
                         <div>
-                            <p style={{float:'left'}}/*className="float-left"*/>{data.user_name}</p>
-                            <p style={{float:'right'}} /*className="float-right"*/>{data.reg_dttm}</p>
-                        </div>
-                        <div>
-                            <p style={{float:'left'}}>{data.content}</p>
-                            <Popup trigger={<button className="congrats__message-del" style={{float:'right'}}> X</button>}>
+                            <p className= "congrats__message-list__name">{data.user_name}
+                                <span className="congrats__message-list__date">&nbsp;&nbsp;&nbsp;{data.reg_dttm}</span>
+                            </p>
+                            <Popup trigger={<button className="congrats__message-del"><CloseOutlined/></button>}>
                                 <div className="congrats__message-popup">
+                                    <p><NotificationOutlined/>&nbsp;입력하셨던 비밀번호를 입력하세요.</p>
                                     <input onChange={onChangeChkPW} name='passwd' placeholder='passwd' value={passwdchk}/>
                                     <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}}>등록</button>
                                 </div>
                             </Popup>
+                        </div>
+                        <div>
+                            <p className="float-left">{data.content}</p>
                         </div>
                     </div>
                 </div>

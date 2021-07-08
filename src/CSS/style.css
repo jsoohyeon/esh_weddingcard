@@ -472,6 +472,57 @@ body {
   src: url("./font/YesevaOne-Regular.ttf");
 }
 */
+.popup__content-add {
+  border: 1px;
+  border-bottom-color: black; }
+
+.congrats__message-del {
+  font-size: 1.5rem;
+  border: none;
+  background-color: black;
+  color: white;
+  display: block;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  float: right; }
+
+.congrats__message-popup {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  left: 50%;
+  transform: translateX(-50%); }
+
+.congrats__message-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 1px #4e4e4e solid;
+  height: min-content;
+  width: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 300;
+  margin: 2rem; }
+  .congrats__message-list__name {
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin-bottom: 0.8rem;
+    float: left; }
+  .congrats__message-list__date {
+    vertical-align: text-bottom;
+    color: #666;
+    font-size: 1.5rem; }
+  .congrats__message-list__content {
+    font-size: 2rem;
+    float: left; }
+
 .cover-container {
   max-width: 42em; }
 
