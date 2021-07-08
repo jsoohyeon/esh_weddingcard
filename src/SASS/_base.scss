@@ -5,8 +5,8 @@ $color-white: #fff;
 $color-gold: #FFD700;
 
 // FONT VARIABLES
-$font-primary: 'Noto Serif', serif;
-
+$font-primary: nanumMyeonjo;
+$font-secondary: 'Noto Serif', serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em;   // 1200px
@@ -26,6 +26,7 @@ $bp-small: 37.5em;    // 600px;
 html {  
   box-sizing: border-box;
   font-size: 62.5% !important;
+  position: inherit;
 
   @media only screen and (max-width: $bp-largest) {
     font-size: 50%;
@@ -33,5 +34,5 @@ html {
 }
 
 body {
-  font-family: $font-primary;
+  font-family: $font-primary, $font-secondary !important;
 }

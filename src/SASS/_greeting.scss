@@ -6,12 +6,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+
 
   &__text {
     background: rgba(255, 255, 255, .75);
-    margin: 2rem;
-    padding: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     position: relative;
   }
   &__message-head {
@@ -31,7 +31,7 @@
     height: .15rem;
     background-color: $color-primary-gray-2;
     display: inline-block;
-    margin: 2.5rem;
+    margin: 2rem auto 2rem auto;
   }
   
   &-parent {

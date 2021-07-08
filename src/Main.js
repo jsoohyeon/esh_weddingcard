@@ -26,7 +26,7 @@ function main(){
                 
                 <div className = "Main-text">
                     <p className = "Main-text__name">
-                        김응수&nbsp;&nbsp;&nbsp;ෆ&nbsp;&nbsp;&nbsp;주수현
+                        김응수주수현
                 
                     </p>
 
@@ -43,7 +43,9 @@ function main(){
 
             <section className = "greeting">
             <div className='head'>
+                <h2 class="head__text">
                 Invitaion<br/>card
+                </h2>
             <span className="head__line">&nbsp;</span>
             </div>
             

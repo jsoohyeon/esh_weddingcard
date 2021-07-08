@@ -8,7 +8,9 @@ function Calendar(){
     return (
         <div className="Calendar">
             <div className="head">
-                save <br/>our date
+                <h2 class="head__text">
+                    save <br/>our date
+                </h2>
                 <span className="head__line">&nbsp;</span>
             </div>
             <div className="Calendar__photo">

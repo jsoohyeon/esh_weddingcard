@@ -13,7 +13,9 @@ function contact() {
   return (
     <div className="contact">
         <div className="head">
-            get<br/>in touch
+            <h2 class="head__text">
+                get<br/>in touch
+            </h2>
             <span className="head__line">&nbsp;</span>
         </div>
         
@@ -44,7 +46,7 @@ function contact() {
           </div>
         
           <div className = "contact__content-grid-3">
-              <span>부</span> 김효식 
+              <span>아버님 </span> 김효식 
               <div className ="contact-icon">
                 <a href="tel:010-3389-0910"> 
                     <img src = {phone} className = "contact__content-icon" alt = "phone"/>
