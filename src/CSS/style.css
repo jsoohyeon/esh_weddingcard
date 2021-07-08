@@ -481,12 +481,31 @@ body {
   src: url("./font/YesevaOne-Regular.ttf");
 }
 */
-.popup__content-add {
+.congrats__message-add {
   border: 1px;
-  border-bottom-color: black; }
+  border-bottom-color: black;
+  text-align: center; }
+  .congrats__message-add__name {
+    width: 40vw;
+    height: 10vh;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5vw; }
+  .congrats__message-add__passwd {
+    width: 40vw;
+    height: 10vh;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5vw; }
+  .congrats__message-add__content {
+    width: 82vw;
+    height: 30vh; }
+  .congrats__message-add__button {
+    margin-top: 1rem;
+    width: 82vw;
+    height: 10vh;
+    color: white;
+    background-color: gray; }
 
 .congrats__message-del {
-  font-size: 1.5rem;
   border: none;
   background-color: black;
   color: white;

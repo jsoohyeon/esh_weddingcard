@@ -66,17 +66,17 @@ function NaverMapAPI() {
         <NaverMap
             mapDivId={'maps-getting-started-uncontrolled'}
             style={{
-                width:'60%',
-                height:'60vh'
+                width:'70vh',
+                height:'70vh'
             }}
             defaultCenter={{ lat: 37.5060320, lng: 127.0667230 }} // 지도 초기 위치
-            defaultZoom={16} // 지도 초기 확대 배율
+            defaultZoom={15} // 지도 초기 확대 배율
         >
             <Marker
                 key={1}
                 position = {new navermaps.LatLng(37.5060320, 127.0667230)}
                 animation = {1}
-                onClick = {() => {alert('그랜드힐컨벤션');}}
+                //nClick = {() => {alert('그랜드힐컨벤션');}}
             />
         </NaverMap>
     );

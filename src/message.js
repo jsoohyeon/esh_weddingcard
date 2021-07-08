@@ -85,20 +85,15 @@ function Message () {
                     Message
             </div>
             <div>
-                <p className="congrats__message-add">
-                    이름:&nbsp;
-                    <input style ={{border:0}} onChange={onChangeUserName} name='user_name' value={user_name}/>
-                </p>
-                <p className="congrats__message-add">
-                    패스워드:&nbsp;
-                    <input style ={{border:0}} type='password' onChange={onChangePasswd} name='passwd' value={passwd}/>
-                </p>
-                <p className="congrats__message-add">
-                    축하메세지:&nbsp;
-                    <input style ={{border:0}} onChange={onChangeContent} name='content' value={content}/>
-                </p>
-                <button onClick={onClickAdd}>등록하기</button>
-
+                <div className="congrats__message-add">
+                    <input className='congrats__message-add__name' onChange={onChangeUserName} name='user_name' placeholder='Name' value={user_name}/>
+                    &nbsp;
+                    <input className='congrats__message-add__passwd' type='password' onChange={onChangePasswd} name='passwd' placeholder='Password'value={passwd}/>
+                    <br/>
+                    <input className='congrats__message-add__content' onChange={onChangeContent} name='content' placeholder='Message' value={content}/>
+                    <br/>
+                    <button className='congrats__message-add__button' onClick={onClickAdd}>등록하기</button>
+                </div>
                 <br/><br/>
 
                 {datas?.map(data =>
