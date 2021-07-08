@@ -17,7 +17,7 @@ function Gallery(){
             <span className="head__line">&nbsp;</span>
             </div>
             <div align='center'>
-                <Carousel arrows prevArrow={<LeftCircleOutlined/>} nextArrow={<RightCircleOutlined/>} swipeToSlide draggable style={{width:'80%'}}>
+                <Carousel arrows prevArrow={<LeftCircleOutlined/>} nextArrow={<RightCircleOutlined/>} autoplay autoplaySpeed='50' swipeToSlide draggable style={{width:'80%'}}>
                     <div>
                         <img src = {gallery0102} className="Gallery-photo" alt = "main"/>
                     </div>
