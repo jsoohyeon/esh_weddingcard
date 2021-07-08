@@ -21,6 +21,7 @@ function main(){
                       <span>&nbsp;</span>
                       <h2>D - {getDDay()}<br/>Wedding day</h2>
                     </div>
+                <h6 className = "Main-photo__sub">Please join us for the wedding</h6>
                 </div>
                 
                 <div className = "Main-text">
@@ -41,10 +42,11 @@ function main(){
             </div>
 
             <section className = "greeting">
-                <video autoPlay muted loop playsInline  className = "bg-video__content">
-                    <source src = {bgvideo} type="video/mp4" alt = {bgimg}/>
-                </video>
-
+            <div className='head'>
+                Invitaion<br/>card
+            <span className="head__line">&nbsp;</span>
+            </div>
+            
                 <div className = "greeting__text">
                     
                     <div className = "greeting__message-head">

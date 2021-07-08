@@ -8,7 +8,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5% !important; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
@@ -45,17 +45,21 @@ body {
       background-color: #666;
       display: inline-block;
       margin: 1rem; }
+  .Main-photo__sub {
+    color: #666;
+    font-size: 4px !important;
+    text-align: center;
+    letter-spacing: 8px; }
 
 .Main-text {
   height: min-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: end;
   font-weight: 300;
   margin: 2rem;
   padding: 2rem;
-  border: 1px #4e4e4e solid;
   border-radius: 2px; }
   .Main-text__name {
     text-align: center;
@@ -70,8 +74,11 @@ body {
 .gallery {
   position: relative;
   width: 100vw;
+  height: 90vh;
   padding: 2rem;
   background-color: #f9f9f9; }
+  .gallery__photo {
+    margin-top: 10rem; }
 
 .Gallery-photo {
   width: 100%;
@@ -82,6 +89,7 @@ body {
   color: black !important; }
 
 .contact {
+  height: 90vh;
   padding: 2rem; }
   .contact__content {
     border-radius: 5px;
@@ -226,10 +234,10 @@ body {
 }
 */
 .Calendar {
+  height: 90vh;
   position: relative;
   padding: 2rem;
-  background-color: #f9f9f9;
-  height: max-content; }
+  background-color: #f9f9f9; }
   .Calendar__photo {
     width: 53vw;
     z-index: -2; }
@@ -297,11 +305,12 @@ body {
 
 .greeting {
   width: 100%;
-  height: 100%;
-  text-align: center;
+  height: 90vh;
   color: #4e4e4e;
   position: relative;
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  padding: 2rem; }
   .greeting__text {
     background: rgba(255, 255, 255, 0.75);
     margin: 2rem;
@@ -404,7 +413,7 @@ body {
     content: "";
     width: 10rem;
     height: .15rem;
-    background-color: #666;
+    background-color: #FFD700;
     display: inline-block;
     margin: 2.5rem;
     position: absolute;

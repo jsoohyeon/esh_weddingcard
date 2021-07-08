@@ -13,7 +13,6 @@ function Gallery(){
         <div className = "gallery">
             <div className='head'>
                 Gallery
-
             <span className="head__line">&nbsp;</span>
             </div>
             <div align='center'>
