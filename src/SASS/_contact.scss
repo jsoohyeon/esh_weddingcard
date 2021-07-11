@@ -100,12 +100,18 @@
       background-color: $color-primary-gray-2;
       display: inline-block;
     }
-
     &-icon {
-      width: 2rem;
-      height: 2rem;
-      margin: 8px;
-      fill: $color-primary-gray
+      width: 3rem;
+      height: 4rem;
+      margin: 0.5rem;
+      padding-top: 0.5rem;
+    }
+    &-iconCircle {
+      width: 4rem;
+      height: 4rem;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 2rem;
     }
   }
 }

@@ -13,10 +13,14 @@
     margin-bottom: 1rem;
   }
 
-  &-center {
-    align-items: center;
-    text-align: center;
-  }
+.map-icon {
+  /*width: 48px;*/
+  width: 5rem;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -24,7 +28,7 @@
 .title{
   flex-direction: column;
   text-align: center;
-  font-family: YesevaOne;
+  //font-family: YesevaOne;
   font-size:400%;
   margin-top: 5rem;
   margin-bottom: 2rem;
@@ -34,13 +38,13 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: BMJUAOTF;
+  //font-family: BMJUAOTF;
   font-size: 140%;
   margin-bottom: 2rem;
 }
 
 .map-info {
-  font-family: BMJUAOTF;
+  //font-family: BMJUAOTF;
   font-size: 120%;
   margin-bottom: 2rem;
   display:block;
@@ -53,4 +57,3 @@
   padding-right: 15px;
   padding-left: 15px;
 }
- 
