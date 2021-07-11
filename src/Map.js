@@ -44,7 +44,7 @@ function Map(){
             </div>
             <br/>
             <div className="map-center map-info">
-                <Collapse defaultActiveKey={['1']} className="map-center map-info">
+                <Collapse defaultActiveKey={['1']}>
                     <Panel header="지하철 이용시" key="1">
                         <p>지하철 2호선 삼성역 1번 출구: 셔틀버스 항시 대기<br/>
                             2번 출구: 도보 10분정도 소요</p>
