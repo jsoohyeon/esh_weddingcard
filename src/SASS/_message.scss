@@ -4,7 +4,8 @@
     &__message-add{
         border: 1px;
         border-bottom-color: black;
-        background-color: $color-primary-gray-5;
+        background-color: #9f9f9f;
+        border-radius: 5px;
         padding: 1rem;
         padding-top: 2rem;
         
@@ -23,17 +24,17 @@
         width: 100%;
         border: none;
         padding: 1rem;
-        border-radius: 5px;
+        border-radius: 3px;
 
         &:focus {
             outline: none;
-            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            box-shadow: 0 0.5rem 1rem rgba($color-black, .1);
             border-bottom: 3px solid $color-gold;
           }
           
           &:focus:invalid {
             outline: none;
-            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            box-shadow: 0 0.5rem 1rem rgba($color-black, .1);
             border-bottom: 3px solid $color-gold;  
           }
       
@@ -42,11 +43,16 @@
           }
     }
     &__label {    
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 700;
         margin-left: 2rem;
+<<<<<<< HEAD
         margin-top: .5rem;
         margin-bottom: .2rem;
+=======
+        margin-top: .7rem;
+        margin-bottom: 1rem;
+>>>>>>> 330287422adb3d6f4d7ce69dd38fa5fe22358f98
         display: block;
         transition: all .3s;
     }
@@ -54,7 +60,7 @@
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4rem);
+    transform: translateY(-1rem);
   } 
 }
 

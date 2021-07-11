@@ -10,9 +10,16 @@
   }
 }
 
-.Gallery-photo {
-  width: 100%;
-  align-items:center;
+.Gallery {
+  background-color: $color-primary-gray-5;
+  &-photo {
+    width: 100%;
+    display: inline-block;
+    align-items:center;
+    &-ver {
+      transform: translateY(50%);
+    }
+  }
 }
 
 .slick-prev:before,

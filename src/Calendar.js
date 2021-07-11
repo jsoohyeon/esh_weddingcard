@@ -1,7 +1,7 @@
 import React from "react";
 
-import calPhoto1 from './image/CH5_0925.jpg'
-import calPhoto2 from './image/CH5_0941.jpg'
+import calPhoto1 from './image/CH5_0925-w1200.jpg'
+import calPhoto2 from './image/CH5_0941-w1200.jpg'
 
 
 function Calendar(){

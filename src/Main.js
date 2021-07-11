@@ -1,11 +1,5 @@
 import React from "react";
-//import mainimg from './image/mainimg2.jpeg'
-import mainimg from './image/mainimg2_b.jpg';
-import mainimgSamll from './image/mainimg2_b-small.jpg';
-//import eungself from './image/portrait-eung.jpeg'
-//import hyeonself from './image/portrait-soo.jpeg'
-//import bgvideo from './movie/video-1.mp4'
-//import bgimg from './image/flower-1.jpg'
+import mainimgSamll from './image/CH5_0189-2-small.jpg';
 
 
 
@@ -16,7 +10,7 @@ function main(){
         <div>
             <div>
                 <div>
-                    <img src = {mainimg} srcSet={`${mainimg} 1280w, ${mainimgSamll} 360w`} className = "Main-photo" alt = "main"/>
+                    <img src = {mainimgSamll} className = "Main-photo" alt = "main"/>
                     <div className="Main-photo__text">
                       <h1>0904</h1>
                       <span>&nbsp;</span>
