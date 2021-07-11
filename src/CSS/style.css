@@ -48,7 +48,7 @@ body {
       margin: 1rem; }
   .Main-photo__sub {
     color: #999;
-    font-size: 5px;
+    font-size: 8px;
     text-align: center;
     letter-spacing: 4px;
     padding: 0;
@@ -81,7 +81,7 @@ body {
 .gallery {
   position: relative;
   width: 100vw;
-  height: 90vh;
+  height: max-content;
   padding: 2rem;
   background-color: #f9f9f9; }
   .gallery__photo {
@@ -96,7 +96,7 @@ body {
   color: black !important; }
 
 .contact {
-  height: 90vh;
+  height: max-content;
   padding: 2rem; }
   .contact__content {
     border-radius: 5px;
@@ -412,7 +412,7 @@ body {
   margin-top: 4rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   display: grid;
   grid-template-columns: 1fr min-content;
   align-items: center;
@@ -495,29 +495,48 @@ body {
   src: url("./font/YesevaOne-Regular.ttf");
 }
 */
-.congrats__message-add {
-  border: 1px;
-  border-bottom-color: black;
-  text-align: center; }
-  .congrats__message-add__name {
-    width: 40vw;
-    height: 5vh;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5vw; }
-  .congrats__message-add__passwd {
-    width: 40vw;
-    height: 5vh;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5vw; }
-  .congrats__message-add__content {
-    width: 82vw;
-    height: 13vh; }
-  .congrats__message-add__button {
-    margin-top: 1rem;
-    width: 82vw;
-    height: 5vh;
-    color: white;
-    background-color: gray; }
+.congrats {
+  padding: 2rem; }
+  .congrats__message-add {
+    border: 1px;
+    border-bottom-color: black;
+    background-color: #d2dae2;
+    padding: 1rem;
+    padding-top: 2rem; }
+    .congrats__message-add__button {
+      margin-top: 1rem;
+      border: none;
+      color: white;
+      background-color: #FFD700;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 100rem; }
+  .congrats__input {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px; }
+    .congrats__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #FFD700; }
+    .congrats__input:focus:invalid {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #FFD700; }
+    .congrats__input::-webkit-input-placeholder {
+      color: #d2dae2; }
+  .congrats__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .congrats__input:placeholder-shown + .congrats__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
 
 .congrats__message-del {
   border: none;

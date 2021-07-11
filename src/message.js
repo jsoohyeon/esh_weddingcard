@@ -80,7 +80,7 @@ function Message () {
     }
 
     return (
-        <div>
+        <div className = "congrats">
             <div className="head">
                 <h2 class="head__text">
                     congrats <br/> US
@@ -89,12 +89,20 @@ function Message () {
             </div>
             <div>
                 <div className="congrats__message-add">
-                    <input className='congrats__message-add__name' onChange={onChangeUserName} name='user_name' placeholder='Name' value={user_name}/>
-                    &nbsp;
-                    <input className='congrats__message-add__passwd' type='password' onChange={onChangePasswd} name='passwd' placeholder='Password'value={passwd}/>
-                    <br/>
-                    <input className='congrats__message-add__content' onChange={onChangeContent} name='content' placeholder='Message' value={content}/>
-                    <br/>
+                    <div>
+                        <input className='congrats__message-add__name congrats__input' onChange={onChangeUserName} name='user_name' placeholder='이름을 입력하세요' value={user_name} id="name" required/>
+                        <label for="name" className="congrats__label">이름을 입력하였습니다.</label>
+                        
+                    </div>
+                    <div>
+                         <input className='congrats__message-add__passwd congrats__input' type='password' onChange={onChangePasswd} name='passwd' placeholder='Password'value={passwd} id="password" required/>
+                        <label for="password" className="congrats__label">비밀번호를 입력하세요.</label>
+                    </div>
+                    <div>
+                        <input className='congrats__message-add__content congrats__input' onChange={onChangeContent} name='content' placeholder='Message' value={content} id="content" required0/>
+                        <label for="content" className="congrats__label">축하 메시지 입력중.</label>
+                    </div>
+                    
                     <button className='congrats__message-add__button' onClick={onClickAdd}>등록하기</button>
                 </div>
                 <br/><br/>
@@ -110,7 +118,7 @@ function Message () {
                                 <div className="congrats__message-popup">
                                     <p><NotificationOutlined/>&nbsp;비밀번호를 입력하세요.</p>
                                     <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='비밀번호' value={passwdchk} className="congrats__message-popup-password"/>
-                                    <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}} className = "congrats__message-popup-btn">등록</button>
+                                    <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}} className = "congrats__message-popup-btn">삭제하기</button>
                                 </div>
                             </Popup>
                         </div>
