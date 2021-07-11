@@ -5,19 +5,19 @@ import leafleft from './image/leaf-left.png';
 import leafright from './image/leaf-right.png';
 import phone from "./image/SVG/067-phone.svg";
 import message from "./image/SVG/108-bubble.svg";
-import { ReactComponent as Phone } from './image/SVG/067-phone.svg';
-import { ReactComponent as Message } from './image/SVG/108-bubble.svg';
+import { PhoneFilled, MessageFilled } from '@ant-design/icons'
+
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 function Contact() {
-    <svg
+    /*<svg
         xmlns="http://www.w3.org/2000/svg"
         width="current"
         height="current"
-        viewBox="0 0 24 24"
+        viewBox="8 8 24 24"
     >
     <path fill="current" fill-rule="evenodd" d="...." />
-    </svg> 
+    </svg> */
     
     const [state, setState] = useState(false);
 
@@ -44,12 +44,11 @@ function Contact() {
           <div className = "contact__content-grid-1">
               <span>신랑</span> 김응수 
               <div className ="contact-icon">
-                <a href="tel:010-3389-0910"> 
-                    <Phone width="2rem" height="2rem" fill="#121212"/>
-                    {/*<img src = {phone} className = "contact__content-icon" alt = "phone"/>*/}
+                <a href="tel:010-2916-2785"> 
+                    <PhoneFilled  style={{fontSize:'2rem', color:'#fff', backgroundColor: '#0984e3'}} className = "contact__content-iconCircle"/>
                 </a>
-                <a href="sms:010-3389-0910"> 
-                    <img src = {message} className = "contact__content-icon" alt = "phone"/>
+                <a href="sms:010-2916-2785"> 
+                    <MessageFilled style={{fontSize:'2rem', color:'#fff', backgroundColor:'#b2bec3'}} className = "contact__content-iconCircle"/>
                 </a>
               </div>
           </div>
@@ -58,58 +57,58 @@ function Contact() {
               <span>신부</span> 주수현
               <div className ="contact-icon">
                 <a href="tel:010-3389-0910"> 
-                    <img src = {phone} className = "contact__content-icon" alt = "phone"/>
+                    <PhoneFilled style={{fontSize:'2rem', color: '#fff', backgroundColor:'#fab1a0'}} className = "contact__content-iconCircle"/>
                 </a>
                 <a href="sms:010-3389-0910"> 
-                    <img src = {message} className = "contact__content-icon" alt = "phone"/>
+                    <MessageFilled style={{fontSize:'2rem', color:'#fff', backgroundColor:'#b2bec3'}} className = "contact__content-iconCircle"/>
                 </a>
             </div>
           </div>
         
           <div className = "contact__content-grid-3">
-              <span>아버지 </span> 김효식 
+              <span>아버지&nbsp;</span> 김효식 
               <div className ="contact-icon">
                 <a href="tel:010-8899-2785"> 
-                    <img src = {phone} className = "contact__content-icon" alt = "phone"/>
+                <PhoneFilled style={{fontSize:'2rem', color: '#0984e3'}} className = "contact__content-icon"/>
                 </a>
                 <a href="sms:010-8899-2785"> 
-                    <img src = {message} className = "contact__content-icon" alt = "phone"/>
+                    <MessageFilled style={{fontSize:'2rem', color:'#b2bec3'}} className = "contact__content-icon"/>
                 </a>
               </div>
           </div>
         
           <div className = "contact__content-grid-4">
-              <span>어머니</span> 신미경 
+              <span>어머니&nbsp;</span> 신미경 
               <div className ="contact-icon">
                 <a href="tel:010-3595-1289"> 
-                    <img src = {phone} className = "contact__content-icon" alt = "phone"/>
+                    <PhoneFilled style={{fontSize:'2rem', color: '#0984e3'}} className = "contact__content-icon"/>
                 </a>
                 <a href="sms:010-3595-1289"> 
-                    <img src = {message} className = "contact__content-icon" alt = "phone"/>
+                    <MessageFilled style={{fontSize:'2rem', color:'#b2bec3'}} className = "contact__content-icon"/>
                 </a>
               </div>
           </div>
         
           <div className = "contact__content-grid-5">
-              <span>아버지</span> 주용회
+              <span>아버지&nbsp;</span> 주용회
               <div className ="contact-icon">
                 <a href="tel:010-6562-2759"> 
-                    <img src = {phone} className = "contact__content-icon" alt = "phone"/>
+                    <PhoneFilled style={{fontSize:'2rem', color: '#fab1a0'}} className = "contact__content-icon"/>
                 </a>
                 <a href="sms:010-6562-2759"> 
-                    <img src = {message} className = "contact__content-icon" alt = "phone"/>
+                    <MessageFilled style={{fontSize:'2rem', color:'#b2bec3'}} className = "contact__content-icon"/>
                 </a>
               </div>
           </div>
         
           <div className = "contact__content-grid-6">
-              <span>어머니</span> 고점숙
+              <span>어머니&nbsp;</span> 고점숙
               <div className ="contact-icon">
                 <a href="tel:010-3126-2759"> 
-                    <img src = {phone} className = "contact__content-icon" alt = "phone"/>
+                    <PhoneFilled style={{fontSize:'2rem', color: '#fab1a0'}} className = "contact__content-icon"/>
                 </a>
                 <a href="sms:010-3126-2759"> 
-                    <img src = {message} className = "contact__content-icon" alt = "phone"/>
+                    <MessageFilled style={{fontSize:'2rem', color:'#b2bec3'}} className = "contact__content-icon"/>
                 </a>
               </div>
           </div>

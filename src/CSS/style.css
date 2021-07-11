@@ -162,10 +162,16 @@ body {
       background-color: #666;
       display: inline-block; }
     .contact__content-icon {
-      width: 2rem;
-      height: 2rem;
-      margin: 8px;
-      fill: #4e4e4e; }
+      width: 3rem;
+      height: 4rem;
+      margin: 0.5rem;
+      padding-top: 0.5rem; }
+    .contact__content-iconCircle {
+      width: 4rem;
+      height: 4rem;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 2rem; }
 
 .btn__contact {
   width: 50vw;
@@ -351,7 +357,7 @@ body {
 
 .map-icon {
   /*width: 48px;*/
-  width: 5%;
+  width: 5rem;
   height: auto;
   margin-left: 10px;
   margin-right: 10px;
@@ -365,7 +371,6 @@ body {
 .title {
   flex-direction: column;
   text-align: center;
-  font-family: YesevaOne;
   font-size: 400%;
   margin-top: 5rem;
   margin-bottom: 2rem; }
@@ -374,12 +379,10 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: BMJUAOTF;
   font-size: 140%;
   margin-bottom: 2rem; }
 
 .map-info {
-  font-family: BMJUAOTF;
   font-size: 120%;
   margin-bottom: 2rem;
   display: block; }
