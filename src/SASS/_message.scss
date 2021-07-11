@@ -44,8 +44,22 @@
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
     left:50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
+
+    &-password {
+        border: none;
+        border-bottom: 1px solid $color-primary-gray;
+        display: block;
+    }
+    
+    &-btn {
+        border: none;
+        background-color: lightblue;
+        display: block;
+    }
 }
 
 .congrats__message-list{

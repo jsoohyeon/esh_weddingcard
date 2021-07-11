@@ -108,9 +108,9 @@ function Message () {
                             </p>
                             <Popup trigger={<button className="congrats__message-del"><CloseOutlined/></button>}>
                                 <div className="congrats__message-popup">
-                                    <p><NotificationOutlined/>&nbsp;입력하셨던 비밀번호를 입력하세요.</p>
-                                    <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='passwd' value={passwdchk}/>
-                                    <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}}>등록</button>
+                                    <p><NotificationOutlined/>&nbsp;비밀번호를 입력하세요.</p>
+                                    <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='비밀번호' value={passwdchk} className="congrats__message-popup-password"/>
+                                    <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}} className = "congrats__message-popup-btn">등록</button>
                                 </div>
                             </Popup>
                         </div>

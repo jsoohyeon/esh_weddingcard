@@ -10,7 +10,7 @@ const { Panel } = Collapse;
 
 function Map(){
     return (
-        <div>
+        <div className="map">
             <div className="head">
                 <h2 class="head__text">
                     Location
