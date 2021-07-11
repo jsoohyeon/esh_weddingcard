@@ -81,8 +81,11 @@ function Message () {
 
     return (
         <div>
-            <div className='title'>
-                    Message
+            <div className="head">
+                <h2 class="head__text">
+                    congrats <br/> US
+                </h2>
+                <span className="head__line">&nbsp;</span>
             </div>
             <div>
                 <div className="congrats__message-add">
@@ -106,13 +109,13 @@ function Message () {
                             <Popup trigger={<button className="congrats__message-del"><CloseOutlined/></button>}>
                                 <div className="congrats__message-popup">
                                     <p><NotificationOutlined/>&nbsp;입력하셨던 비밀번호를 입력하세요.</p>
-                                    <input onChange={onChangeChkPW} name='passwd' placeholder='passwd' value={passwdchk}/>
+                                    <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='passwd' value={passwdchk}/>
                                     <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}}>등록</button>
                                 </div>
                             </Popup>
                         </div>
                         <div>
-                            <p className="float-left">{data.content}</p>
+                            <p className="congrats__message-list__content">{data.content}</p>
                         </div>
                     </div>
                 </div>

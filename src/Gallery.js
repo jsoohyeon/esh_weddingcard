@@ -12,9 +12,12 @@ function Gallery(){
     return (
         <div className = "gallery">
             <div className='head'>
-                Gallery
-            <span className="head__line">&nbsp;</span>
+                <h2 class="head__text">
+                    Gallery
+                </h2>
+                <span className="head__line">&nbsp;</span>
             </div>
+
             <div align='center'>
                 <Carousel arrows prevArrow={<LeftCircleOutlined/>} nextArrow={<RightCircleOutlined/>} autoplay autoplaySpeed='50' swipeToSlide draggable style={{width:'80%'}}>
                     <div>

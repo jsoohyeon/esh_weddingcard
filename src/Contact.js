@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Popup from "reactjs-popup";
 
 import leafleft from './image/leaf-left.png';
 import leafright from './image/leaf-right.png';
 import phone from "./image/SVG/067-phone.svg";
 import message from "./image/SVG/108-bubble.svg";
+import { ReactComponent as Phone } from './image/SVG/067-phone.svg';
+import { ReactComponent as Message } from './image/SVG/108-bubble.svg';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-   
+function Contact() {
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="current"
+        height="current"
+        viewBox="0 0 24 24"
+    >
+    <path fill="current" fill-rule="evenodd" d="...." />
+    </svg> 
+    
+    const [state, setState] = useState(false);
 
-function contact() {
+    const onCopy = () => {
+        setState(true);
+    }
+
+    const onAlert = () => {
+        alert('복사되었습니다!');
+        setState(false);
+    }
+
   return (
     <div className="contact">
         <div className="head">
@@ -25,7 +45,8 @@ function contact() {
               <span>신랑</span> 김응수 
               <div className ="contact-icon">
                 <a href="tel:010-3389-0910"> 
-                    <img src = {phone} className = "contact__content-icon" alt = "phone"/>
+                    <Phone width="2rem" height="2rem" fill="#121212"/>
+                    {/*<img src = {phone} className = "contact__content-icon" alt = "phone"/>*/}
                 </a>
                 <a href="sms:010-3389-0910"> 
                     <img src = {message} className = "contact__content-icon" alt = "phone"/>
@@ -46,48 +67,48 @@ function contact() {
           </div>
         
           <div className = "contact__content-grid-3">
-              <span>아버님 </span> 김효식 
+              <span>아버지 </span> 김효식 
               <div className ="contact-icon">
-                <a href="tel:010-3389-0910"> 
+                <a href="tel:010-8899-2785"> 
                     <img src = {phone} className = "contact__content-icon" alt = "phone"/>
                 </a>
-                <a href="sms:010-3389-0910"> 
+                <a href="sms:010-8899-2785"> 
                     <img src = {message} className = "contact__content-icon" alt = "phone"/>
                 </a>
               </div>
           </div>
         
           <div className = "contact__content-grid-4">
-              <span>모</span> 김효식 
+              <span>어머니</span> 신미경 
               <div className ="contact-icon">
-                <a href="tel:010-3389-0910"> 
+                <a href="tel:010-3595-1289"> 
                     <img src = {phone} className = "contact__content-icon" alt = "phone"/>
                 </a>
-                <a href="sms:010-3389-0910"> 
+                <a href="sms:010-3595-1289"> 
                     <img src = {message} className = "contact__content-icon" alt = "phone"/>
                 </a>
               </div>
           </div>
         
           <div className = "contact__content-grid-5">
-              <span>부</span> 주용회
+              <span>아버지</span> 주용회
               <div className ="contact-icon">
-                <a href="tel:010-3389-0910"> 
+                <a href="tel:010-6562-2759"> 
                     <img src = {phone} className = "contact__content-icon" alt = "phone"/>
                 </a>
-                <a href="sms:010-3389-0910"> 
+                <a href="sms:010-6562-2759"> 
                     <img src = {message} className = "contact__content-icon" alt = "phone"/>
                 </a>
               </div>
           </div>
         
           <div className = "contact__content-grid-6">
-              <span>모</span> 고점숙
+              <span>어머니</span> 고점숙
               <div className ="contact-icon">
-                <a href="tel:010-3389-0910"> 
+                <a href="tel:010-3126-2759"> 
                     <img src = {phone} className = "contact__content-icon" alt = "phone"/>
                 </a>
-                <a href="sms:010-3389-0910"> 
+                <a href="sms:010-3126-2759"> 
                     <img src = {message} className = "contact__content-icon" alt = "phone"/>
                 </a>
               </div>
@@ -102,27 +123,29 @@ function contact() {
       </div>
 
 
-    <Popup trigger={<button className="btn__contact"> 축하 전하기 (계좌번호) </button>} >
+    <Popup trigger={<button className="btn__contact"> 마음 전하실 곳 </button>} >
     <div className = "popup__content">
-        <img src = {leafleft} className = "popup__content-leaf-1" />
+        <img src = {leafleft} className = "popup__content-leaf-1" alt='leaf-left' />
 
         <div className="popup__content-groom">
-            <h4> 신랑 계좌번호 </h4>
-            <CopyToClipboard text={"123456789"} className="popup__content-btn">
-                <button>하나은행 123456789 김응수</button>
+            <h4> 신랑측 계좌번호 </h4>
+            <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
+                <button>신한은행 110-171-663380 김응수</button>
             </CopyToClipboard>
+            {state ? onAlert() : null }
         </div>
         <div className="popup__content-bride" >
-            <h4> 신부 계좌번호 </h4>
-            <CopyToClipboard text={"123456789"} className="popup__content-btn">
-                <button>하나은행 123456789 주수현</button>
+            <h4> 신부측 계좌번호 </h4>
+            <CopyToClipboard onCopy={onCopy} text={"1002-552-923835"} className="popup__content-btn">
+                <button>우리은행 1002-552-923835 주수현</button>
             </CopyToClipboard>
+            {state ? onAlert() : null }
         </div>
         
         <div className="popup__content-copy">
             계좌번호를 클릭하시면 복사됩니다!
         </div>
-          <img src = {leafright} className = "popup__content-leaf-2" />
+          <img src = {leafright} className = "popup__content-leaf-2" alt='leaf-right' />
       </div>
   </Popup>
     </div>
@@ -130,4 +153,4 @@ function contact() {
 }
 
 
-export default contact
+export default Contact

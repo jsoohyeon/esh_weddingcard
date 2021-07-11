@@ -3,8 +3,8 @@ import React from "react";
 import mainimg from './image/mainimg2_b.jpg';
 //import eungself from './image/portrait-eung.jpeg'
 //import hyeonself from './image/portrait-soo.jpeg'
-import bgvideo from './movie/video-1.mp4'
-import bgimg from './image/flower-1.jpg'
+//import bgvideo from './movie/video-1.mp4'
+//import bgimg from './image/flower-1.jpg'
 
 
 

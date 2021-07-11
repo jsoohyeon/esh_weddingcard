@@ -11,9 +11,13 @@ const { Panel } = Collapse;
 function Map(){
     return (
         <div>
-            <div className='title'>
-                Location
+            <div className="head">
+                <h2 class="head__text">
+                    Location
+                </h2>
+                <span className="head__line">&nbsp;</span>
             </div>
+
             <div className="map-text">
                 <div>그랜드힐컨벤션 2층 사브리나홀</div>
                 <div>(서울특별시 강남구 대치2동 역삼로 607)</div>
@@ -66,8 +70,8 @@ function NaverMapAPI() {
         <NaverMap
             mapDivId={'maps-getting-started-uncontrolled'}
             style={{
-                width:'70vh',
-                height:'70vh'
+                width:'100%',
+                height:'40vh'
             }}
             defaultCenter={{ lat: 37.5060320, lng: 127.0667230 }} // 지도 초기 위치
             defaultZoom={15} // 지도 초기 확대 배율
