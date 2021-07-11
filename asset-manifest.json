@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/invite_you/static/css/main.204eb7d2.chunk.css",
+    "main.css": "/invite_you/static/css/main.dfe5020f.chunk.css",
     "main.js": "/invite_you/static/js/main.4878fc7b.chunk.js",
     "main.js.map": "/invite_you/static/js/main.4878fc7b.chunk.js.map",
     "runtime-main.js": "/invite_you/static/js/runtime-main.e8772953.js",
@@ -12,7 +12,7 @@
     "static/js/3.4bee5aeb.chunk.js.map": "/invite_you/static/js/3.4bee5aeb.chunk.js.map",
     "index.html": "/invite_you/index.html",
     "static/css/2.b4e56faa.chunk.css.map": "/invite_you/static/css/2.b4e56faa.chunk.css.map",
-    "static/css/main.204eb7d2.chunk.css.map": "/invite_you/static/css/main.204eb7d2.chunk.css.map",
+    "static/css/main.dfe5020f.chunk.css.map": "/invite_you/static/css/main.dfe5020f.chunk.css.map",
     "static/js/2.cffd671f.chunk.js.LICENSE.txt": "/invite_you/static/js/2.cffd671f.chunk.js.LICENSE.txt",
     "static/media/067-phone.62fd8188.svg": "/invite_you/static/media/067-phone.62fd8188.svg",
     "static/media/108-bubble.2e60d2f8.svg": "/invite_you/static/media/108-bubble.2e60d2f8.svg",
@@ -36,7 +36,7 @@
     "static/js/runtime-main.e8772953.js",
     "static/css/2.b4e56faa.chunk.css",
     "static/js/2.cffd671f.chunk.js",
-    "static/css/main.204eb7d2.chunk.css",
+    "static/css/main.dfe5020f.chunk.css",
     "static/js/main.4878fc7b.chunk.js"
   ]
 }
