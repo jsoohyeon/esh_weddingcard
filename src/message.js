@@ -96,7 +96,7 @@ function Message () {
                     </div>
                     <div>
                          <input className='congrats__message-add__passwd congrats__input' type='password' onChange={onChangePasswd} name='passwd' placeholder='Password'value={passwd} id="password" required/>
-                        <label for="password" className="congrats__label">비밀번호를 입력하세요.</label>
+                        <label for="password" className="congrats__label">비밀번호를 기억하세요.</label>
                     </div>
                     <div>
                         <input className='congrats__message-add__content congrats__input' onChange={onChangeContent} name='content' placeholder='Message' value={content} id="content" required0/>

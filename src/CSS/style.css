@@ -87,9 +87,14 @@ body {
   .gallery__photo {
     margin-top: 10rem; }
 
-.Gallery-photo {
-  width: 100%;
-  align-items: center; }
+.Gallery {
+  background-color: #d2dae2; }
+  .Gallery-photo {
+    width: 100%;
+    display: inline-block;
+    align-items: center; }
+    .Gallery-photo-ver {
+      transform: translateY(50%); }
 
 .slick-prev:before,
 .slick-next:before {
@@ -362,7 +367,7 @@ body {
   height: max-content; }
   .map-icon {
     /*width: 48px;*/
-    width: 2rem;
+    width: 3rem;
     height: auto;
     margin-left: 10px;
     margin-right: 10px;
@@ -500,7 +505,8 @@ body {
   .congrats__message-add {
     border: 1px;
     border-bottom-color: black;
-    background-color: #d2dae2;
+    background-color: #9f9f9f;
+    border-radius: 5px;
     padding: 1rem;
     padding-top: 2rem; }
     .congrats__message-add__button {
@@ -515,28 +521,29 @@ body {
     width: 100%;
     border: none;
     padding: 1rem;
-    border-radius: 5px; }
+    border-radius: 3px; }
     .congrats__input:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       border-bottom: 3px solid #FFD700; }
     .congrats__input:focus:invalid {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       border-bottom: 3px solid #FFD700; }
     .congrats__input::-webkit-input-placeholder {
       color: #d2dae2; }
   .congrats__label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-left: 2rem;
     margin-top: .7rem;
+    margin-bottom: 1rem;
     display: block;
     transition: all .3s; }
   .congrats__input:placeholder-shown + .congrats__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4rem); }
+    transform: translateY(-1rem); }
 
 .congrats__message-del {
   border: none;
