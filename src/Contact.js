@@ -114,9 +114,11 @@ function Contact() {
             <div className="map-center">
                 <h4 className="highlight-broom"> 신랑측 계좌번호</h4>
             </div>
-            <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
-                <button>신한은행 110-171-663380 김응수</button>
-            </CopyToClipboard>
+            <div className="map-center">
+                <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
+                    <button>신한은행 110-171-663380 김응수</button>
+                </CopyToClipboard>
+            </div>
 
         </div>
         <img src = {leafleft} className = "popup__content-leaf-3" alt='leaf-left' />
