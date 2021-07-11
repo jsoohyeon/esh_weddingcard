@@ -1,32 +1,63 @@
-.congrats__message-add{
-    border: 1px;
-    border-bottom-color: black;
-    text-align: center;
+.congrats {
+    padding: 2rem;
 
-    &__name{
-        width:40vw;
-        height: 5vh;
-        margin-bottom: 0.5rem;
-        margin-right: 0.5vw;
+    &__message-add{
+        border: 1px;
+        border-bottom-color: black;
+        background-color: $color-primary-gray-5;
+        padding: 1rem;
+        padding-top: 2rem;
+        
+        &__button{
+            margin-top: 1rem;
+            border: none;
+            color: white;
+            background-color: $color-gold;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 100rem;
+        }
     }
-    &__passwd{
-        width:40vw;
-        height: 5vh;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5vw;
+
+    &__input {
+        width: 100%;
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-gold;
+          }
+          
+          &:focus:invalid {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-gold;  
+          }
+      
+          &::-webkit-input-placeholder {
+            color: $color-primary-gray-5
+          }
     }
-    &__content{
-        width: 82vw;
-        height: 13vh;
+    &__label {    
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
     }
-    &__button{
-        margin-top: 1rem;
-        width: 82vw;
-        height: 5vh;
-        color: white;
-        background-color: gray;
-    }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  } 
 }
+
+
 
 .congrats__message-del{
     border: none;
@@ -44,8 +75,22 @@
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
     left:50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
+
+    &-password {
+        border: none;
+        border-bottom: 1px solid $color-primary-gray;
+        display: block;
+    }
+    
+    &-btn {
+        border: none;
+        background-color: lightblue;
+        display: block;
+    }
 }
 
 .congrats__message-list{

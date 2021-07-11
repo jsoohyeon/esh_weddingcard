@@ -1,6 +1,6 @@
 
 .contact {
-  height: 90vh;
+  height: max-content;
   padding: 2rem;
 
   &__content {
@@ -125,7 +125,7 @@
   border-radius: 10rem;
   background-color: $color-primary-gray;
   margin-bottom: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   text-decoration: none;
   border: none;
   box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
@@ -145,6 +145,11 @@
   display: grid;  
   grid-template-columns: 3rem max-content 3rem;
   grid-template-rows: repeat(2, 10rem);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   
 
   &-leaf-1 {
