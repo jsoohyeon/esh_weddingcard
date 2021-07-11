@@ -143,8 +143,8 @@
   box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 
   display: grid;  
-  grid-template-columns: 3rem max-content 3rem;
-  grid-template-rows: repeat(2, 10rem);
+  grid-template-columns: 6rem max-content 6rem;
+  grid-template-rows: repeat(2, 8rem);
 
   position: fixed;
   top: 50%;
@@ -156,14 +156,19 @@
     grid-column: 1;
     grid-row: 1 / -1;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   
   &-groom {
+    margin: 2rem;
     grid-column: 2;
     grid-row: 1;
-  }
+
+    }
   
   &-bride {
+    margin: 2rem;
     grid-column: 2;
     grid-row: 2;
   }
@@ -178,6 +183,8 @@
     grid-column: 3;
     grid-row: 1 / -1;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   &-btn {
