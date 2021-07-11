@@ -90,7 +90,7 @@ function Message () {
             <div>
                 <div className="congrats__message-add">
                     <div>
-                        <input className='congrats__message-add__name congrats__input' onChange={onChangeUserName} name='user_name' placeholder='이름을 입력하세요' value={user_name} id="name" required/>
+                        <input className='congrats__message-add__name congrats__input' onChange={onChangeUserName} name='user_name' placeholder='Name' value={user_name} id="name" required/>
                         <label for="name" className="congrats__label">이름을 입력하였습니다.</label>
                         
                     </div>
@@ -100,7 +100,7 @@ function Message () {
                     </div>
                     <div>
                         <input className='congrats__message-add__content congrats__input' onChange={onChangeContent} name='content' placeholder='Message' value={content} id="content" required0/>
-                        <label for="content" className="congrats__label">축하 메시지 입력중.</label>
+                        <label for="content" className="congrats__label">축하 메시지 입력중...</label>
                     </div>
                     
                     <button className='congrats__message-add__button' onClick={onClickAdd}>등록하기</button>
