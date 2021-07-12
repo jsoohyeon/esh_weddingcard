@@ -99,6 +99,16 @@ body {
     .Gallery-photo-ver {
       transform: translateY(50%); }
 
+.ant-carousel .slick-prev, .ant-carousel .slick-next {
+  fill: violet !important;
+  z-index: 10 !important; }
+
+.ant-carousel .slick-prev {
+  left: 8px !important; }
+
+.ant-carousel .slick-next {
+  right: 8px !important; }
+
 .slick-prev:before,
 .slick-next:before {
   color: black !important; }
