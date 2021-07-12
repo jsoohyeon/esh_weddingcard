@@ -3,7 +3,7 @@
   width: 100vw;
   height: max-content;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: $color-primary-gray-5;
 
   &__photo {
     margin-top: 10rem;
@@ -11,7 +11,9 @@
 }
 
 .Gallery {
-  background-color: $color-primary-gray-5;
+  background-color: $color-white;
+  padding: 3rem;
+  margin-bottom: 3rem;
   &-photo {
     width: 100%;
     display: inline-block;

@@ -111,14 +111,11 @@ function Contact() {
         <img src = {leafleft} className = "popup__content-leaf-1" alt='leaf-left' />
 
         <div className="popup__content-groom">
-            <div className="map-center">
-                <h4 className="highlight-broom"> 신랑측 계좌번호</h4>
-            </div>
-            <div className="map-center">
+                <h4 className="highlight-broom"> 신랑측 계좌번호<br/></h4>
+         
                 <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
                     <button>신한은행 110-171-663380 김응수</button>
                 </CopyToClipboard>
-            </div>
 
         </div>
         <div className="popup__content-bride" >
