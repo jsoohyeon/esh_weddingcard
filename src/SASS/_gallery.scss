@@ -3,7 +3,7 @@
   width: 100vw;
   height: max-content;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: $color-primary-gray-5;
 
   &__photo {
     margin-top: 10rem;
@@ -11,7 +11,9 @@
 }
 
 .Gallery {
-  background-color: $color-primary-gray-5;
+  background-color: $color-white;
+  padding: 3rem;
+  margin-bottom: 3rem;
   &-photo {
     width: 100%;
     display: inline-block;
@@ -22,12 +24,17 @@
   }
 }
 
-.slide-left{
-  height:2rem;
-  margin-left: 10rem;
-  z-index: 1;
+.ant-carousel .slick-prev, .ant-carousel .slick-next {
+  fill:violet !important;
+  z-index: 10 !important;
+}
+.ant-carousel .slick-prev {
+  left: 8px !important;
 }
 
+.ant-carousel .slick-next {
+  right: 8px !important;
+}
 
 .slick-prev:before,
 .slick-next:before {

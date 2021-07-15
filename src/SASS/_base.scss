@@ -1,7 +1,8 @@
 // COLOR VARIABLES
 $color-primary-gray: #4e4e4e;
 $color-primary-gray-2 : #666;
-$color-primary-gray-5 : #d2dae2;
+$color-primary-gray-5 : #e4e4e4;
+$color-primary-gray-6 : #f9f9f9;;
 $color-white: #fff;
 $color-black: #000;
 $color-gold: #FFD700;
@@ -38,4 +39,5 @@ html {
 
 body {
   font-family: $font-primary, $font-secondary !important;
+  max-width: 60rem;
 }

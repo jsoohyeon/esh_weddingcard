@@ -111,24 +111,19 @@ function Contact() {
         <img src = {leafleft} className = "popup__content-leaf-1" alt='leaf-left' />
 
         <div className="popup__content-groom">
-            <div className="map-center">
-                <h4 className="highlight-broom"> 신랑측 계좌번호</h4>
-            </div>
-            <div className="map-center">
+                <h4 className="highlight-broom"> 신랑측 계좌번호<br/></h4>
+         
                 <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
                     <button>신한은행 110-171-663380 김응수</button>
                 </CopyToClipboard>
-            </div>
 
         </div>
-        <img src = {leafleft} className = "popup__content-leaf-3" alt='leaf-left' />
         <div className="popup__content-bride" >
             <h4 className="highlight-bride"> 신부측 계좌번호<br/></h4>
             <CopyToClipboard onCopy={onCopy} text={"1002-552-923835"} className="popup__content-btn">
                 <button>우리은행 1002-552-923835 주수현</button>
             </CopyToClipboard>
         </div>
-        <img src = {leafright} className = "popup__content-leaf-4" alt='leaf-right' />
         <div className="popup__content-copy">
             계좌번호를 클릭하시면 복사됩니다!
         </div>

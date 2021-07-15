@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "antd";
-import { CaretLeftOutlined, CaretRightOutlined} from '@ant-design/icons'
+import { LeftCircleOutlined, RightCircleOutlined} from '@ant-design/icons'
 import "antd/dist/antd.css";
 import img01 from './image/CH5_0023-w1200.jpg'
 import img02_VER from './image/CH5_0257-w1600.jpg'
@@ -27,7 +27,7 @@ function Gallery(){
             </div>
 
             <div align='center' className="Gallery">
-                <Carousel arrows prevArrow={<CaretLeftOutlined style={{color:'#red', backgroundColor:'#fff'}} className="slide-left"/>} nextArrow={<CaretRightOutlined/>} /*autoplay autoplaySpeed='50'*/ swipeToSlide draggable style={{width:'80%'}}>
+                <Carousel arrows prevArrow={<LeftCircleOutlined/>} nextArrow={<RightCircleOutlined/>} autoplay autoplaySpeed='50' swipeToSlide draggable style={{width:'100%'}}>
                     <div>
                         <img src = {img01} className="Gallery-photo" alt = "main"/>
                     </div>

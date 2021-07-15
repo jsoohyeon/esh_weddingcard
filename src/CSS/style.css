@@ -15,7 +15,8 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: nanumMyeonjo, "Noto Serif", serif !important; }
+  font-family: nanumMyeonjo, "Noto Serif", serif !important;
+  max-width: 60rem; }
 
 .Main-photo {
   height: 90vh;
@@ -52,7 +53,8 @@ body {
     text-align: center;
     letter-spacing: 4px;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    background-color: #f9f9f9; }
 
 .Main-text {
   height: min-content;
@@ -63,7 +65,8 @@ body {
   font-weight: 300;
   padding: 2rem;
   border-radius: 2px;
-  margin-bottom: 4rem; }
+  padding-bottom: 4rem;
+  background-color: #f9f9f9; }
   .Main-text__name {
     text-align: center;
     font-size: 2.2rem;
@@ -83,12 +86,14 @@ body {
   width: 100vw;
   height: max-content;
   padding: 2rem;
-  background-color: #f9f9f9; }
+  background-color: #e4e4e4; }
   .gallery__photo {
     margin-top: 10rem; }
 
 .Gallery {
-  background-color: #d2dae2; }
+  background-color: #fff;
+  padding: 3rem;
+  margin-bottom: 3rem; }
   .Gallery-photo {
     width: 100%;
     display: inline-block;
@@ -96,10 +101,15 @@ body {
     .Gallery-photo-ver {
       transform: translateY(50%); }
 
-.slide-left {
-  height: 2rem;
-  margin-left: 10rem;
-  z-index: 1; }
+.ant-carousel .slick-prev, .ant-carousel .slick-next {
+  fill: violet !important;
+  z-index: 10 !important; }
+
+.ant-carousel .slick-prev {
+  left: 8px !important; }
+
+.ant-carousel .slick-next {
+  right: 8px !important; }
 
 .slick-prev:before,
 .slick-next:before {
@@ -107,7 +117,8 @@ body {
 
 .contact {
   height: max-content;
-  padding: 2rem; }
+  padding: 2rem;
+  padding-bottom: 4rem; }
   .contact__content {
     border-radius: 5px;
     color: #4e4e4e;
@@ -203,13 +214,14 @@ body {
   transform: translateX(-50%); }
 
 .popup__content {
-  background-color: #fff;
-  padding: 3rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
   border-radius: 2rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
   display: grid;
-  grid-template-columns: 6rem max-content 6rem;
-  grid-template-rows: repeat(2, 8rem);
+  grid-template-columns: 4rem max-content 4rem;
+  grid-template-rows: repeat(2, 6rem) 3rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -221,16 +233,25 @@ body {
     height: 100%;
     object-fit: contain; }
   .popup__content-groom {
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
     grid-column: 2;
     grid-row: 1; }
   .popup__content-bride {
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
     grid-column: 2;
     grid-row: 2; }
   .popup__content-copy {
     grid-column: 2;
     grid-row: 3;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
     color: red; }
   .popup__content-leaf-2 {
     grid-column: 3;
@@ -238,14 +259,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain; }
-  .popup__content-leaf-3 {
-    grid-column: 1;
-    grid-row: 2 / -1;
-    width: 100%; }
-  .popup__content-leaf-4 {
-    grid-column: 3;
-    grid-row: 2 / -1;
-    width: 100%; }
   .popup__content-btn {
     border: none;
     background-color: #fff; }
@@ -287,7 +300,7 @@ body {
   height: 80vh;
   position: relative;
   padding: 2rem;
-  background-color: #f9f9f9; }
+  background-color: #e4e4e4; }
   .Calendar__photo {
     width: 53vw;
     z-index: -2; }
@@ -311,7 +324,7 @@ body {
       margin-top: -2rem; }
       .Calendar__table-main td {
         font-size: 1rem;
-        height: 2.6rem; }
+        height: 2rem; }
     .Calendar__table-sub {
       margin-top: 2rem;
       font-size: 1rem;
@@ -532,11 +545,11 @@ body {
 }
 */
 .congrats {
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: #e4e4e4; }
   .congrats__message-add {
     border: 1px;
     border-bottom-color: black;
-    background-color: #9f9f9f;
     border-radius: 5px;
     padding: 1rem;
     padding-top: 2rem; }
@@ -562,7 +575,7 @@ body {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
       border-bottom: 3px solid #FFD700; }
     .congrats__input::-webkit-input-placeholder {
-      color: #d2dae2; }
+      color: #e4e4e4; }
   .congrats__label {
     font-size: 1rem;
     font-weight: 700;

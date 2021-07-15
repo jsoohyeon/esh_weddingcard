@@ -1,10 +1,10 @@
 .congrats {
     padding: 2rem;
+  background-color: $color-primary-gray-5;
 
     &__message-add{
         border: 1px;
         border-bottom-color: black;
-        background-color: #9f9f9f;
         border-radius: 5px;
         padding: 1rem;
         padding-top: 2rem;
