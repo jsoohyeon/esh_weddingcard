@@ -9,6 +9,11 @@
   src: url("./font/NanumMyeongjo.otf");
 }
 
+@font-face { 
+  font-family: nanumGothic;
+  src: url("./font/NanumGothic.ttf");
+}
+
 @font-face {
   font-family: 'Noto Serif', serif;
   src: url("./font/NotoSerif-Regular.ttf");

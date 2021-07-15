@@ -66,10 +66,10 @@ body {
   margin-bottom: 4rem; }
   .Main-text__name {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 1rem;
     margin-bottom: 0.8rem;
-    font-weight: 500; }
+    font-weight: 550; }
     .Main-text__name span {
       font-size: 1.4rem; }
   .Main-text__sub {
@@ -96,9 +96,14 @@ body {
     .Gallery-photo-ver {
       transform: translateY(50%); }
 
+.slide-left {
+  height: 2rem;
+  margin-left: 10rem;
+  z-index: 1; }
+
 .slick-prev:before,
 .slick-next:before {
-  color: black !important; }
+  margin-top: 0px; }
 
 .contact {
   height: max-content;
@@ -539,7 +544,7 @@ body {
       margin-top: 1rem;
       border: none;
       color: white;
-      background-color: #FFD700;
+      background-color: #f2cc00;
       width: 100%;
       padding: 1rem;
       border-radius: 100rem; }
@@ -562,13 +567,8 @@ body {
     font-size: 1rem;
     font-weight: 700;
     margin-left: 2rem;
-<<<<<<< HEAD
-    margin-top: .5rem;
-    margin-bottom: .2rem;
-=======
     margin-top: .7rem;
     margin-bottom: 1rem;
->>>>>>> 21e184e755320ac8d300f99de775f5a8046ace08
     display: block;
     transition: all .3s; }
   .congrats__input:placeholder-shown + .congrats__label {
@@ -584,29 +584,44 @@ body {
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  float: right; }
+  float: right;
+  padding: .3rem; }
 
 .congrats__message-popup {
   background-color: #fff;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  position: fixed; }
   .congrats__message-popup-password {
+    margin-top: .5rem;
+    padding: .5rem;
     border: none;
-    border-bottom: 1px solid #4e4e4e;
-    display: block; }
+    border-radius: .3rem;
+    background-color: #dfe6e9;
+    display: block;
+    width: 100%; }
+  .congrats__message-popup-password::placeholder {
+    text-align: center; }
   .congrats__message-popup-btn {
+    margin-top: .5rem;
+    padding: .5rem;
+    color: white;
     border: none;
-    background-color: lightblue;
-    display: block; }
+    border-radius: .3rem;
+    background-color: #FFD700;
+    display: block;
+    text-align: center;
+    width: 100%; }
+
+.popupcss {
+  display: none; }
 
 .congrats__message-list {
   margin-top: 0;
   margin-bottom: 0;
+  padding: .5rem;
+  padding-bottom: 1.5rem;
   border-right: 0;
   border-left: 0;
   border-top: 0;
@@ -617,19 +632,29 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   font-weight: 300;
-  margin: 2rem; }
+  margin: 2rem;
+  font-family: nanumGothic !important; }
   .congrats__message-list__name {
     font-weight: bold;
     font-size: 1.6rem;
     margin-bottom: 0.8rem;
     float: left; }
   .congrats__message-list__date {
+    margin-top: 0.5rem;
+    float: right;
     vertical-align: text-bottom;
     color: #666;
     font-size: 1.3rem; }
   .congrats__message-list__content {
     font-size: 1.6rem;
     float: left; }
+
+.display-None {
+  display: none; }
+
+.display-Blck {
+  display: block;
+  transition: all 2s ease-in-out; }
 
 .cover-container {
   max-width: 42em; }

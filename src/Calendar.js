@@ -86,14 +86,4 @@ function Calendar(){
     )
 }
 
-function getDDay() {
-    const setDate = new Date("2021-09-04T11:30:00+0900");
-    const now = new Date();
-    const distance = setDate - now;
-
-    const day = Math.floor(distance / (1000*60*60*24));
-    
-    return day;
-}
-
 export default Calendar

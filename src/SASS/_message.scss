@@ -13,7 +13,7 @@
             margin-top: 1rem;
             border: none;
             color: white;
-            background-color: $color-gold;
+            background-color: #f2cc00;
             width: 100%;
             padding: 1rem;
             border-radius: 100rem;
@@ -46,13 +46,8 @@
         font-size: 1rem;
         font-weight: 700;
         margin-left: 2rem;
-<<<<<<< HEAD
-        margin-top: .5rem;
-        margin-bottom: .2rem;
-=======
         margin-top: .7rem;
         margin-bottom: 1rem;
->>>>>>> 21e184e755320ac8d300f99de775f5a8046ace08
         display: block;
         transition: all .3s;
     }
@@ -75,6 +70,7 @@
     width: 2.5rem;
     height: 2.5rem;
     float: right;
+    padding: .3rem;
 }
 
 .congrats__message-popup{
@@ -83,26 +79,42 @@
     border-radius: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     position: fixed;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
 
     &-password {
+        margin-top: .5rem;
+        padding: .5rem;
         border: none;
-        border-bottom: 1px solid $color-primary-gray;
+        border-radius: .3rem;
+        background-color:#dfe6e9;
         display: block;
+        width: 100%;
+    }
+    &-password::placeholder{
+        text-align: center;
     }
     
     &-btn {
+        margin-top: .5rem;
+        padding: .5rem;
+        color: white;
         border: none;
-        background-color: lightblue;
+        border-radius: .3rem;
+        background-color: $color-gold;
         display: block;
+        text-align: center;
+        width: 100%;
     }
+}
+
+.popupcss{
+    display:none;
 }
 
 .congrats__message-list{
     margin-top: 0;
     margin-bottom: 0;
+    padding: .5rem;
+    padding-bottom: 1.5rem;
     border-right: 0;
     border-left: 0;
     border-top: 0;
@@ -114,7 +126,8 @@
     justify-content: center;
     font-weight: 300;
     margin: 2rem;
-
+    font-family: nanumGothic !important;
+    
     &__name{
         font-weight: bold;
         font-size: 1.6rem;
@@ -123,6 +136,8 @@
     }
 
     &__date{
+        margin-top: 0.5rem;
+        float: right;
         vertical-align: text-bottom;
         color: $color-primary-gray-2;
         font-size: 1.3rem;
@@ -132,4 +147,13 @@
         font-size: 1.6rem;
         float: left;
     }
+}
+
+.display-None{
+    display : none;
+}
+
+.display-Blck {
+    display: block;
+    transition: all 2s ease-in-out;
 }

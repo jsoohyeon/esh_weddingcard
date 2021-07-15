@@ -22,7 +22,15 @@
   }
 }
 
+.slide-left{
+  height:2rem;
+  margin-left: 10rem;
+  z-index: 1;
+}
+
+
 .slick-prev:before,
 .slick-next:before {
-  color: black!important;;
+  margin-top:0px;
 }
+

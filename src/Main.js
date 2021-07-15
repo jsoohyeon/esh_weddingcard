@@ -1,6 +1,6 @@
 import React from "react";
 import mainimgSamll from './image/CH5_0189-2-small.jpg';
-
+import and from './image/and.png'
 
 
 
@@ -21,8 +21,7 @@ function main(){
                 
                 <div className = "Main-text">
                     <p className = "Main-text__name">
-                        김응수 <span>그리고</span> 주수현
-                
+                        김&nbsp;응&nbsp;수&nbsp;&nbsp;<img style={{height:'2rem'}}src={and} alt='그리고'/>&nbsp;&nbsp;주&nbsp;수&nbsp;현                
                     </p>
 
                     <p className = "Main-text__sub">
@@ -66,7 +65,7 @@ function main(){
 }
 
 function getDDay() {
-    const setDate = new Date("2021-09-04T11:30:00+0900");
+    const setDate = new Date("2021-09-04T00:00:00+0900");
     const now = new Date();
     const distance = setDate - now;
 
