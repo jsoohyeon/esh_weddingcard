@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Collapse } from 'antd';
 import firebase from "./firebase.js";
 import moment from 'moment';
 import { CloseOutlined } from '@ant-design/icons'
-
 
 function Messeage () {
     const [datas, setDatas] = useState([]);
@@ -73,6 +73,7 @@ function Messeage () {
 
 
     const setState = (data) => {
+        setChk('');
         if(data.popchk === false){
             setPopchk(true);
             userRef.child(data.user_id).update({
@@ -84,7 +85,7 @@ function Messeage () {
             userRef.child(data.user_id).update({
                 popchk : false
             })
-        }
+        }        
     }
 
     const onClickRemove = (user_id, passwd, chkpasswd) => {
@@ -138,11 +139,16 @@ function Messeage () {
                         <div>
                             <p className="congrats__message-list__content">{data.content}</p>
                             <button  className="congrats__message-del" onClick={() => setState(data)}><CloseOutlined/></button>
-                            <div className={data.popchk ? "display-None" : "display-blck"}>
+                            <div id = {data.user_id} className={popchk ? "display-None" : "display-blck"}>
                                 <br/>
                                 <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='Password' value={passwdchk} className="congrats__message-popup-password"/>
                                 <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}} className = "congrats__message-popup-btn">확인</button>
                             </div>
+                            {/*<div className={popchk ? "display-None" : "display-blck"}>
+                                <br/>
+                                <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='Password' value={passwdchk} className="congrats__message-popup-password"/>
+                                <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}} className = "congrats__message-popup-btn">확인</button>
+                            </div>*/}
                         </div>
                     </div>
                 </div>
