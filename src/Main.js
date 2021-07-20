@@ -2,14 +2,11 @@ import React from "react";
 import mainimgSamll from './image/CH5_0189-2-small.jpg';
 import and from './image/and.png'
 
-
-
-
 function main(){
     return (
         <div>
             <div>
-                <div>
+                <div className="Main-photo__wrap">
                     <img src = {mainimgSamll} className = "Main-photo" alt = "main"/>
                     <div className="Main-photo__text">
                       <h1>0904</h1>
@@ -55,7 +52,7 @@ function main(){
                     <span className = "greeting-span">&nbsp;</span>
                     <div className = "greeting-parent">
                         김효식 ⋄ 신미경 <span>의 아들</span> 김응수 <br/>
-                        주용회 ⋄ 고점숙 <span>의 딸</span> 주수현
+                        주용회 ⋄ 고점숙 <span>의 &nbsp;&nbsp;딸&nbsp;</span> 주수현
                     </div>
 
                 </div>

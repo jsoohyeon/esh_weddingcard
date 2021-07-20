@@ -3,8 +3,6 @@ import Popup from "reactjs-popup";
 
 import leafleft from './image/leaf-left.png';
 import leafright from './image/leaf-right.png';
-import phone from "./image/SVG/067-phone.svg";
-import message from "./image/SVG/108-bubble.svg";
 import { PhoneFilled, MessageFilled } from '@ant-design/icons'
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -111,17 +109,18 @@ function Contact() {
         <img src = {leafleft} className = "popup__content-leaf-1" alt='leaf-left' />
 
         <div className="popup__content-groom">
-                <h4 className="highlight-broom"> 신랑측 계좌번호<br/></h4>
-         
-                <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
-                    <button>신한은행 110-171-663380 김응수</button>
-                </CopyToClipboard>
-
+            <h4 className = "popup__content-title">신랑 김응수<br/></h4>
+        
+            <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
+                <button>신한은행 110-171-663380</button>
+            </CopyToClipboard>
+            <hr className="line-css"/>
         </div>
+
         <div className="popup__content-bride" >
-            <h4 className="highlight-bride"> 신부측 계좌번호<br/></h4>
+            <h4 className = "popup__content-title">신부 주수현<br/></h4>
             <CopyToClipboard onCopy={onCopy} text={"1002-552-923835"} className="popup__content-btn">
-                <button>우리은행 1002-552-923835 주수현</button>
+                <button>우리은행 1002-552-923835</button>
             </CopyToClipboard>
         </div>
         <div className="popup__content-copy">

@@ -5,11 +5,10 @@
   padding: 2rem;
   background-color: $color-primary-gray-5;
 
-
-
   &__photo {
     width: 53vw;
     z-index: -2;
+    object-fit: cover;
 
     &-1, &-2 {
       width: 100%;

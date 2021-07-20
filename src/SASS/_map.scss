@@ -38,6 +38,9 @@
   font-size: 1rem;
   margin-bottom: 2rem;
   display:block;
+  &__text{
+    margin: 0px;
+  }
 }
 
 .col-md-12 {

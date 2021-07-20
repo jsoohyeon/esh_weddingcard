@@ -1,17 +1,21 @@
 .Main-photo{
+  //height: 90vh;
   width: 100%;
   object-fit: cover;
-  display: flex;
+  //display: flex;
   justify-content: center;
   align-items: center;
   position:relative;
   text-align:center;
 
+  &__wrap {
+    position: relative;
+  }
 
   &__text {
     text-align: center;
     position: absolute;
-    top:6%;
+    top:5%;
     left: 50%;
     transform: translateX(-50%);
 

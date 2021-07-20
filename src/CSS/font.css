@@ -15,6 +15,11 @@
 }
 
 @font-face {
+  font-family: nanumBarunpen;
+  src: url("./font/NanumBarunpenRegular.ttf");
+}
+
+@font-face {
   font-family: 'Noto Serif', serif;
   src: url("./font/NotoSerif-Regular.ttf");
 }

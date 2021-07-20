@@ -22,7 +22,15 @@
       transform: translateY(50%);
     }
   }
+
+  &-nav{
+    clip: rect( 20px, 220px, 220px, 20px );
+	  width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+  }
 }
+
 
 .ant-carousel .slick-prev, .ant-carousel .slick-next {
   fill:violet !important;
@@ -40,4 +48,3 @@
 .slick-next:before {
   margin-top:0px;
 }
-
