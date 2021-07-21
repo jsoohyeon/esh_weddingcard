@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/invite_you/static/css/main.181d48ab.chunk.css",
+    "main.css": "/invite_you/static/css/main.fb258cb4.chunk.css",
     "main.js": "/invite_you/static/js/main.31d1980a.chunk.js",
     "main.js.map": "/invite_you/static/js/main.31d1980a.chunk.js.map",
     "runtime-main.js": "/invite_you/static/js/runtime-main.27888500.js",
@@ -12,7 +12,7 @@
     "static/js/3.7f08c973.chunk.js.map": "/invite_you/static/js/3.7f08c973.chunk.js.map",
     "index.html": "/invite_you/index.html",
     "static/css/2.722982b6.chunk.css.map": "/invite_you/static/css/2.722982b6.chunk.css.map",
-    "static/css/main.181d48ab.chunk.css.map": "/invite_you/static/css/main.181d48ab.chunk.css.map",
+    "static/css/main.fb258cb4.chunk.css.map": "/invite_you/static/css/main.fb258cb4.chunk.css.map",
     "static/js/2.2ab7b8a8.chunk.js.LICENSE.txt": "/invite_you/static/js/2.2ab7b8a8.chunk.js.LICENSE.txt",
     "static/media/font.css": "/invite_you/static/media/힘내라는 말보단.8b26299d.ttf",
     "static/media/CH5_0023-w1200.ae32624b.jpg": "/invite_you/static/media/CH5_0023-w1200.ae32624b.jpg",
@@ -44,7 +44,7 @@
     "static/js/runtime-main.27888500.js",
     "static/css/2.722982b6.chunk.css",
     "static/js/2.2ab7b8a8.chunk.js",
-    "static/css/main.181d48ab.chunk.css",
+    "static/css/main.fb258cb4.chunk.css",
     "static/js/main.31d1980a.chunk.js"
   ]
 }
