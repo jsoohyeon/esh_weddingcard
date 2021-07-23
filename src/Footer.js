@@ -5,7 +5,7 @@ import Kakao from './image/kakao.png';
 import Copy from './image/copy.png';
 import Message from './image/message.png';
 
-function Futter() {
+function Footer() {
     const [smsURL, setSmsURL] = useState('');
     var URL = 'https://jsoohyeon.github.io/invite_you';
     
@@ -46,8 +46,8 @@ function Futter() {
     }
 
     return (
-        <div>
-            <div className="grid">
+        <div className="footer">
+                <div className="grid">
                 <div className="grid-1">
                     <a className = "Message-icon" href= {smsURL} onClick = {TextURL}>
                         <img className="Message-icon_btn" src={Message} alt="Message" />
@@ -72,4 +72,4 @@ function Futter() {
 }
 
 
-export default Futter
+export default Footer

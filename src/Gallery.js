@@ -45,7 +45,7 @@ function Gallery(){
         prevArrow: <button type='button' className='slick-prev'>Previous</button>,
         nextArrow: <button type='button' className='slick-next'>Next</button>,
         centerMode: true,
-        slidesToShow: 7,
+        slidesToShow: 5,
         swipeToSlide: true,
         focusOnSelect: true,
         responsive: [
@@ -85,7 +85,7 @@ function Gallery(){
                 <span className="head__line">&nbsp;</span>
             </div>
 
-            <div align='center' className="Gallery" /*style={{width:'100%', height:'100%'}}*/>
+            <div className="Gallery" /*style={{width:'100%', height:'100%'}}*/>
                 <Slider ref={slider1}
                 asNavFor={pagingSlick}
                 {...mainSettings}

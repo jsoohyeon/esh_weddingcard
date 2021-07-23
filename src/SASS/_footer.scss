@@ -1,10 +1,20 @@
+.footer {
+
+  @media only screen and (min-width: $bp-medium) {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .grid{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: .5rem;
     justify-items: center;
     background-color: #dcdcdc;
-    
+
+
     &-1{
         grid-column: 2;
         grid-row: 1;

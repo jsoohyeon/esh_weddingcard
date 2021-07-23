@@ -128,10 +128,10 @@
 }
 
 .btn__contact {
-  width: 50vw;
+  width: 50vw; 
   height: 5rem;
   font-size: 1.5rem;
-  color: #fff;
+  color: #FFFFF8;
   border-radius: 10rem;
   background-color: $color-primary-gray;
   margin-bottom: 1.5rem;
@@ -151,7 +151,7 @@
   padding-bottom: 3rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 4px rgba(0,0,0,.2);
-  background-color: #F4EAE6;
+  background-color: #FFFFF8;
 
   display: grid;  
   grid-template-columns: 4rem max-content 4rem;
@@ -182,7 +182,7 @@
   }
   
   &-bride {
-    margin-top: 3rem;
+    margin-top: 2nprem;
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: center;
@@ -209,10 +209,11 @@
 
   &-btn {
     border:none;
-    background-color: #F4EAE6;
+    background-color: #FFFFF8;
   }
   &-title{
     font-weight: bold;
+    margin-bottom: 1px;
   }
 }
 .popup-overlay {
@@ -222,20 +223,3 @@
   visibility: hidden !important;
 }
 
-.highlight-broom{
-  display:inline;
-  box-shadow: inset 0 -10px 0 #81ecec;
-  text-align: center;
-}
-
-.highlight-bride{
-  display:inline;
-  box-shadow: inset 0 -10px 0 #fab1a0;
-  text-align: center;
-}
-
-.line-css {
-  margin: 1rem;
-  border-color: #18A558;
-  border-style: dashed;
-}

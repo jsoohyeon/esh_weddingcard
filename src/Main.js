@@ -4,7 +4,7 @@ import and from './image/and.png'
 
 function main(){
     return (
-        <div>
+        <div className="header">
             <div>
                 <div className="Main-photo__wrap">
                     <img src = {mainimgSamll} className = "Main-photo" alt = "main"/>
@@ -51,6 +51,7 @@ function main(){
                         평생 이 손을 놓지 않기로 약속했습니다.<br/><br/>
                         저희 두 사람이 사랑으로<br/>약속을 지켜나갈 수 있도록<br/>
                         귀한 걸음 하시어<br/>따뜻하게 축복해주시면 감사하겠습니다.
+                        
                     </div>
                     
                     <span className = "greeting-span">&nbsp;</span>

@@ -114,7 +114,6 @@ function Contact() {
             <CopyToClipboard onCopy={onCopy} text={"110-171-663380"} className="popup__content-btn">
                 <button>신한은행 110-171-663380</button>
             </CopyToClipboard>
-            <hr className="line-css"/>
         </div>
 
         <div className="popup__content-bride" >

@@ -15,8 +15,13 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: nanumMyeonjo, "Noto Serif", serif !important;
-  max-width: 60rem; }
+  font-family: nanumMyeonjo, "Noto Serif", serif !important; }
+
+@media only screen and (min-width: 50em) {
+  .header {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .Main-photo {
   height: 75rem;
@@ -36,12 +41,12 @@ body {
     left: 50%;
     transform: translateX(-50%); }
     .Main-photo__text h1 {
-      color: #4e4e4e;
+      color: #666;
       font-size: 1.8rem; }
     .Main-photo__text h2 {
-      color: #fff;
+      color: #666;
       font-size: 1.2rem;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
     .Main-photo__text span::before {
       content: "";
       width: 1px;
@@ -89,9 +94,9 @@ body {
   background-color: #e4e4e4; }
   @media only screen and (min-width: 50em) {
     .gallery {
-          max-width: 60rem;
-          margin-left: auto;
-          margin-right: auto; } }
+      max-width: 60rem;
+      margin-left: auto;
+      margin-right: auto; } }
   .gallery__photo {
     margin-top: 10rem; }
 
@@ -218,7 +223,7 @@ body {
   width: 50vw;
   height: 5rem;
   font-size: 1.5rem;
-  color: #fff;
+  color: #FFFFF8;
   border-radius: 10rem;
   background-color: #4e4e4e;
   margin-bottom: 1.5rem;
@@ -236,7 +241,7 @@ body {
   padding-bottom: 3rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  background-color: #F4EAE6;
+  background-color: #FFFFF8;
   display: grid;
   grid-template-columns: 4rem max-content 4rem;
   grid-template-rows: repeat(2, 6rem) 3rem;
@@ -259,7 +264,7 @@ body {
     grid-column: 2;
     grid-row: 1; }
   .popup__content-bride {
-    margin-top: 3rem;
+    margin-top: 2nprem;
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: center;
@@ -280,9 +285,10 @@ body {
     object-fit: contain; }
   .popup__content-btn {
     border: none;
-    background-color: #F4EAE6; }
+    background-color: #FFFFF8; }
   .popup__content-title {
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 1px; }
 
 .popup-overlay {
   background: rgba(0, 0, 0, 0.5); }
@@ -290,33 +296,26 @@ body {
 .popup-arrow {
   visibility: hidden !important; }
 
-.highlight-broom {
-  display: inline;
-  box-shadow: inset 0 -10px 0 #81ecec;
-  text-align: center; }
-
-.highlight-bride {
-  display: inline;
-  box-shadow: inset 0 -10px 0 #fab1a0;
-  text-align: center; }
-
-.line-css {
-  margin: 1rem;
-  border-color: #18A558;
-  border-style: dashed; }
-
 .Calendar {
   width: 100%;
   position: relative;
   padding: 2rem;
   background-color: #e4e4e4;
   flex-direction: column; }
+  @media only screen and (min-width: 50em) {
+    .Calendar {
+      max-width: 60rem;
+      margin-left: auto;
+      margin-right: auto; } }
   .Calendar__photo {
     width: 53vw;
     z-index: -2;
     object-fit: cover; }
     .Calendar__photo-1, .Calendar__photo-2 {
       width: 100%; }
+    @media only screen and (min-width: 50em) {
+      .Calendar__photo {
+        width: 35rem; } }
   .Calendar__table {
     position: absolute;
     display: flex;
@@ -327,6 +326,10 @@ body {
     padding: 1.2rem;
     right: 4%;
     top: 50%; }
+    @media only screen and (min-width: 50em) {
+      .Calendar__table {
+        width: 20vw;
+        top: 70%; } }
     .Calendar__table-month {
       text-align: center;
       font-size: 3rem;
@@ -395,11 +398,12 @@ body {
     font-weight: bold; }
   .greeting__message-body {
     font-size: 1.6rem;
-    line-height: 3rem; }
+    line-height: 3rem;
+    margin-bottom: 2rem; }
   .greeting-span::before {
     content: "";
-    width: 10rem;
-    height: .15rem;
+    width: 14rem;
+    height: .1rem;
     background-color: #666;
     display: inline-block;
     margin: 2rem auto 2rem auto; }
@@ -407,7 +411,8 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 2.5rem;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3.5rem;
+    text-align: right; }
     .greeting-parent span {
       font-size: 1rem; }
 
@@ -423,6 +428,11 @@ body {
   padding: 2rem;
   width: 100%;
   height: max-content; }
+  @media only screen and (min-width: 50em) {
+    .map {
+      max-width: 60rem;
+      margin-left: auto;
+      margin-right: auto; } }
   .map-icon {
     width: 4rem;
     height: auto;
@@ -559,6 +569,11 @@ body {
 .congrats {
   padding: 2rem;
   background-color: #e4e4e4; }
+  @media only screen and (min-width: 50em) {
+    .congrats {
+      max-width: 60rem;
+      margin-left: auto;
+      margin-right: auto; } }
   .congrats__message-add {
     border: 1px;
     border-bottom-color: black;
@@ -679,6 +694,12 @@ body {
 .display-Blck {
   display: block;
   transition: all 2s ease-in-out; }
+
+@media only screen and (min-width: 50em) {
+  .footer {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .grid {
   display: grid;

@@ -1,3 +1,10 @@
+.header {
+  @media only screen and (min-width: $bp-medium) {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .Main-photo{
   height: 75rem;
   width: 100%;
@@ -20,14 +27,14 @@
     transform: translateX(-50%);
 
     h1{
-      color: $color-primary-gray;
+      color: $color-primary-gray-2;
       font-size: 1.8rem;
     }
 
     h2{
-      color: $color-white;
+      color: $color-primary-gray-2;
       font-size: 1.2rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+      text-shadow: 1px 1px 2px rgba(0,0,0,.1);
     }
 
     span::before{
