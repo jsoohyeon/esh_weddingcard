@@ -87,6 +87,11 @@ body {
   width: 100vw;
   padding: 2rem;
   background-color: #e4e4e4; }
+  @media only screen and (min-width: 50em) {
+    .gallery {
+          max-width: 60rem;
+          margin-left: auto;
+          margin-right: auto; } }
   .gallery__photo {
     margin-top: 10rem; }
 
@@ -125,6 +130,11 @@ body {
   width: 100%;
   padding: 2rem;
   padding-bottom: 4rem; }
+  @media only screen and (min-width: 50em) {
+    .contact {
+      max-width: 60rem;
+      margin-left: auto;
+      margin-right: auto; } }
   .contact__content {
     border-radius: 5px;
     color: #4e4e4e;
@@ -693,13 +703,13 @@ body {
   .Message-icon_btn {
     padding-top: 3.4rem;
     padding-bottom: 3.3rem;
-    width: 4rem;
+    width: 3.5rem;
     vertical-align: middle;
     background-color: none; }
 
 .Kakao-icon {
   border: none;
-  width: 4rem;
+  width: 3.5rem;
   background-color: #dcdcdc;
   border-right: .5rem; }
   .Kakao-icon_btn {
@@ -711,7 +721,7 @@ body {
 .Copy-icon {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  width: 4rem;
+  width: 3.5rem;
   vertical-align: middle;
   background-color: none; }
 

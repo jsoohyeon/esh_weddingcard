@@ -5,6 +5,12 @@
   padding: 2rem;
   padding-bottom: 4rem;
 
+  @media only screen and (min-width: $bp-medium) {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &__content {
     border-radius: 5px;
     color: $color-primary-gray;

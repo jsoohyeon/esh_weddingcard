@@ -56,7 +56,7 @@ function main(){
                     <span className = "greeting-span">&nbsp;</span>
                     <div className = "greeting-parent">
                         김효식 ⋄ 신미경 <span>의 아들</span> 김응수 <br/>
-                        주용회 ⋄ 고점숙 <span>의 &nbsp;&nbsp;딸&nbsp;</span> 주수현
+                        주용회 ⋄ 고점숙 <span>의 &nbsp;딸&nbsp;</span> 주수현
                     </div>
 
                 </div>
