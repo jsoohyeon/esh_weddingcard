@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Collapse } from 'antd';
 import firebase from "./firebase.js";
 import moment from 'moment';
 import { CloseOutlined } from '@ant-design/icons'
@@ -11,7 +10,6 @@ function Messeage () {
     const [passwd, setPasswd] = useState('');
     const [reg_dttm, setDttm] = useState('');
     const [passwdchk, setChk] = useState('');
-    const [popchk, setPopchk] = useState(false);
     const userRef = firebase.database().ref('users');
  
 
@@ -59,7 +57,6 @@ function Messeage () {
             userData.reg_dttm = moment().format('YYYY-MM-DD HH:mm:ss');
             userData.popchk = 'false';
 
-            setPopchk(userData.popchk);
             setDttm(userData.reg_dttm);
 
             userRef.push(userData);
@@ -67,26 +64,19 @@ function Messeage () {
             setContent('');
             setPasswd('');
             setDttm('');
-            setPopchk('');
         }
     }
 
 
-    const setState = (data) => {
-        setChk('');
-        if(data.popchk === false){
-            setPopchk(true);
-            userRef.child(data.user_id).update({
-                popchk : true
-            })
+    const popPwd = (data) => {
+        if(document.getElementById(data.user_id).style.display === 'none' || document.getElementById(data.user_id).style.display===''){
+            document.getElementById(data.user_id).style.display='block';
         }
-        else {
-            setPopchk(false);
-            userRef.child(data.user_id).update({
-                popchk : false
-            })
-        }        
+        else{
+            document.getElementById(data.user_id).style.display='none';
+        }
     }
+    
 
     const onClickRemove = (user_id, passwd, chkpasswd) => {
         if(passwd === chkpasswd){
@@ -120,13 +110,15 @@ function Messeage () {
                         <label for="password" className="congrats__label">비밀번호를 기억하세요.</label>
                     </div>
                     <div>
-                        <input className='congrats__message-add__content congrats__input' onChange={onChangeContent} name='content' placeholder='Message' value={content} id="content" required0/>
+                        <input className='congrats__message-add__content congrats__input' onChange={onChangeContent} name='content' placeholder='Message' value={content} id="content" required/>
                         <label for="content" className="congrats__label">축하 메시지 입력중...</label>
                     </div>
                     
                     <button className='congrats__message-add__button' onClick={onClickAdd}>등록하기</button>
                 </div>
                 <br/><br/>
+
+                
 
                 {datas?.map(data =>
                 <div key={data.user_id}>
@@ -138,17 +130,12 @@ function Messeage () {
                         </div>
                         <div>
                             <p className="congrats__message-list__content">{data.content}</p>
-                            <button  className="congrats__message-del" onClick={() => setState(data)}><CloseOutlined/></button>
-                            <div id = {data.user_id} className={popchk ? "display-None" : "display-blck"}>
+                            <button  className="congrats__message-del" onClick={() => popPwd(data)}> <CloseOutlined/></button>
+                            <div id={data.user_id} className={"display-None"}>
                                 <br/>
                                 <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='Password' value={passwdchk} className="congrats__message-popup-password"/>
                                 <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}} className = "congrats__message-popup-btn">확인</button>
                             </div>
-                            {/*<div className={popchk ? "display-None" : "display-blck"}>
-                                <br/>
-                                <input onChange={onChangeChkPW} type='password' name='passwd' placeholder='Password' value={passwdchk} className="congrats__message-popup-password"/>
-                                <button onClick={()=>{onClickRemove(data.user_id, data.passwd, passwdchk)}} className = "congrats__message-popup-btn">확인</button>
-                            </div>*/}
                         </div>
                     </div>
                 </div>

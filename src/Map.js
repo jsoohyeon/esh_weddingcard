@@ -39,23 +39,23 @@ function Map(){
                     errer={<p>Maps Load Error</p>}
                     loading={<p>Maps Loading .... </p>}
                 >
-                    <NaverMapAPI/>
+                    <NaverMapAPI />
                 </RenderAfterNavermapsLoaded>
             </div>
             <br/>
             <div className="map-center map-info">
                 <Collapse defaultActiveKey={['1']}>
                     <Panel header="지하철 이용시" key="1">
-                        <p>지하철 2호선 삼성역 1번 출구: 셔틀버스 항시 대기<br/>
+                        <p className = 'map-info__text'>지하철 2호선 삼성역 1번 출구: 셔틀버스 항시 대기<br/>
                             2번 출구: 도보 10분정도 소요</p>
                     </Panel>
                     <Panel header="버스 이용시" key="2">
-                        <p>간선버스(파랑색): 143, 146, 341, 360, 401 <br/>
+                        <p className = 'map-info__text'>간선버스(파랑색): 143, 146, 341, 360, 401 <br/>
                             지선버스(녹색): 2413, 3411, 3422, 4318, 4419, 917, 11-3<br/>
                             광역버스(빨강색): 9407, 6900</p>
                     </Panel>
                     <Panel header="자가용 이용시" key="3">
-                        <p>강남경찰서 → 강남운전면허시험장 방면 350M 오른쪽 그랜드힐 컨벤션 <br/>
+                        <p className = 'map-info__text'>강남경찰서 → 강남운전면허시험장 방면 350M 오른쪽 그랜드힐 컨벤션 <br/>
                             * 네비게이션 그랜드힐 컨벤션 입력</p>
                     </Panel>
                 </Collapse>
@@ -71,10 +71,10 @@ function NaverMapAPI() {
             mapDivId={'maps-getting-started-uncontrolled'}
             style={{
                 width:'100%',
-                height:'40vh'
+                height:'30rem'
             }}
-            defaultCenter={{ lat: 37.5060320, lng: 127.0667230 }} // 지도 초기 위치
-            defaultZoom={15} // 지도 초기 확대 배율
+            defaultCenter={{ lat: 37.506751, lng: 127.065882 }} // 지도 초기 위치
+            defaultZoom={16} // 지도 초기 확대 배율
         >
             <Marker
                 key={1}

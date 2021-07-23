@@ -1,4 +1,12 @@
+.header {
+  @media only screen and (min-width: $bp-medium) {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .Main-photo{
+  height: 75rem;
   width: 100%;
   object-fit: cover;
   display: flex;
@@ -7,23 +15,26 @@
   position:relative;
   text-align:center;
 
+  &__wrap {
+    position: relative;
+  }
 
   &__text {
     text-align: center;
     position: absolute;
-    top:6%;
+    top:5%;
     left: 50%;
     transform: translateX(-50%);
 
     h1{
-      color: $color-primary-gray;
+      color: $color-primary-gray-2;
       font-size: 1.8rem;
     }
 
     h2{
-      color: $color-white;
+      color: $color-primary-gray-2;
       font-size: 1.2rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+      text-shadow: 1px 1px 2px rgba(0,0,0,.1);
     }
 
     span::before{
@@ -47,7 +58,7 @@
 }
 
 .Main-text {
-    height: min-content;
+    //height: min-content;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;

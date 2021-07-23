@@ -10,6 +10,8 @@ $color-gold: #FFD700;
 // FONT VARIABLES
 $font-primary: nanumMyeonjo;
 $font-secondary: 'Noto Serif', serif;
+$font-godic:  nanumGothic;
+$font-barunpen: nanumBarunpen;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em;   // 1200px
@@ -38,4 +40,5 @@ html {
 
 body {
   font-family: $font-primary, $font-secondary !important;
+
 }

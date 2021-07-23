@@ -2,14 +2,11 @@ import React from "react";
 import mainimgSamll from './image/CH5_0189-2-small.jpg';
 import and from './image/and.png'
 
-
-
-
 function main(){
     return (
-        <div>
+        <div className="header">
             <div>
-                <div>
+                <div className="Main-photo__wrap">
                     <img src = {mainimgSamll} className = "Main-photo" alt = "main"/>
                     <div className="Main-photo__text">
                       <h1>0904</h1>
@@ -46,16 +43,21 @@ function main(){
                 <div className = "greeting__text">
                     
                     <div className = "greeting__message-head">
-                        기관과 불어 광야에서 인생에 것이 어디 때문이다?
+                        좋은날, 당신과 함께
                     </div>
                     <div className = "greeting__message-body">
-                        기관과 불어 기관과 불어 광야에서 인생에 것이 어디 때문이다. 청춘 설레는 크고 커다란 청춘을 끓는 반짝이는 이 따뜻한 말이다. 인간의 천하를 앞이 것이다. 뜨고, 밝은 바이며, 충분히 들어 소금이라 하는 칼이다. 충분히 열매를 끝까지 있으며, 수 것이다. 무엇을 뜨고, 꽃이 위하여서, 광야에서 인생에 것이 어디 때문이다. 
+                        <br/> 
+                        어느덧 시간이 흘러<br/>저희 둘 처음 손 잡은 지 7년이 흘렀습니다.<br/>
+                        평생 이 손을 놓지 않기로 약속했습니다.<br/><br/>
+                        저희 두 사람이 사랑으로<br/>약속을 지켜나갈 수 있도록<br/>
+                        귀한 걸음 하시어<br/>따뜻하게 축복해주시면 감사하겠습니다.
+                        
                     </div>
                     
                     <span className = "greeting-span">&nbsp;</span>
                     <div className = "greeting-parent">
                         김효식 ⋄ 신미경 <span>의 아들</span> 김응수 <br/>
-                        주용회 ⋄ 고점숙 <span>의 딸</span> 주수현
+                        주용회 ⋄ 고점숙 <span>의 &nbsp;&nbsp;딸&nbsp;</span> 주수현
                     </div>
 
                 </div>

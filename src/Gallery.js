@@ -1,7 +1,7 @@
-import React from "react";
-import { Carousel } from "antd";
-import { LeftCircleOutlined, RightCircleOutlined} from '@ant-design/icons'
-import "antd/dist/antd.css";
+import React,{ useRef, useEffect, useState } from "react";
+import Slider from "react-slick"
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import img01 from './image/CH5_0023-w1200.jpg'
 import img02_VER from './image/CH5_0257-w1600.jpg'
 import img03_VER from './image/CH5_0346-w1600.jpg'
@@ -17,6 +17,65 @@ import img12 from './image/CH5_1012-w1200.jpg'
 import img13 from './image/CH5_1050-w1200.jpg'
 
 function Gallery(){
+    const [mainSlick, setMainSlick] = useState(null);
+    const [pagingSlick, setPagingSlick] = useState(null);
+    const slider1 = useRef(null);
+    const slider2 = useRef(null);
+
+    useEffect(() => {
+        setMainSlick(slider1.current);
+        setPagingSlick(slider2.current);
+    }, []);
+
+
+    const mainSettings = {
+        dots: false,
+        arrows : true,
+        prevArrow: <button type='button' className='slick-prev'>Previous</button>,
+        nextArrow: <button type='button' className='slick-next'>Next</button>,
+        infinite: true,
+        slidesToshow: false,
+        slidesToScroll: 1,
+        //fade: true,
+    };
+
+    const pagingSettings = {
+        dots: false,
+        arrows: true,
+        prevArrow: <button type='button' className='slick-prev'>Previous</button>,
+        nextArrow: <button type='button' className='slick-next'>Next</button>,
+        centerMode: true,
+        slidesToShow: 5,
+        swipeToSlide: true,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 320,
+                settings:{
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings:{
+                    slidesToShow: 5,
+                }
+            }
+        ]
+    };
+
     return (
         <div className = "gallery">
             <div className='head'>
@@ -26,8 +85,11 @@ function Gallery(){
                 <span className="head__line">&nbsp;</span>
             </div>
 
-            <div align='center' className="Gallery">
-                <Carousel arrows prevArrow={<LeftCircleOutlined/>} nextArrow={<RightCircleOutlined/>} /*swipeToSlide*/ draggable style={{width:'100%'}}>
+            <div className="Gallery" /*style={{width:'100%', height:'100%'}}*/>
+                <Slider ref={slider1}
+                asNavFor={pagingSlick}
+                {...mainSettings}
+                >
                     <div>
                         <img src = {img01} className="Gallery-photo" alt = "main"/>
                     </div>
@@ -67,8 +129,53 @@ function Gallery(){
                     <div>
                         <img src = {img13} className="Gallery-photo" alt = "main"/>
                     </div>
-                    
-                </Carousel>
+                </Slider>
+
+                <Slider
+                    asNavFor = {mainSlick}
+                    ref = {slider2}
+                    {...pagingSettings}
+                >
+                    <div className="pagingSlide">
+                        <img src = {img01} className="pagingSlide Gallery-nav" alt = "main" id ="pagingSlide"/>
+                    </div>
+                    <div>
+                        <img src = {img02_VER} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img03_VER} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img04} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img05_VER} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img06_PORT} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img07_PORT} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img08} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img09_PORT} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img10_VER} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img11} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img12} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img13} className="Gallery-nav" alt = "main"/>
+                    </div>
+                </Slider>
                 <br/><br/>
             </div>
         </div>

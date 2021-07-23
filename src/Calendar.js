@@ -1,5 +1,4 @@
 import React from "react";
-
 import calPhoto1 from './image/CH5_0925-w1200.jpg'
 import calPhoto2 from './image/CH5_0941-w1200.jpg'
 
@@ -14,8 +13,8 @@ function Calendar(){
                 <span className="head__line">&nbsp;</span>
             </div>
             <div className="Calendar__photo">
-                <img src = {calPhoto1} className="Calendar__photo-1" />
-                <img src = {calPhoto2} className="Calendar__photo-2" />
+                <img src = {calPhoto1} className="Calendar__photo-1" alt='couple_1'/>
+                <img src = {calPhoto2} className="Calendar__photo-2" alt='couple_2'/>
             </div>
             <div className="Calendar__table">
                 <p className="Calendar__table-month">09</p>

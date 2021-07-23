@@ -1,10 +1,16 @@
 .gallery {
   position: relative;
   width: 100vw;
-  height: max-content;
   padding: 2rem;
   background-color: $color-primary-gray-5;
 
+  @media only screen and (min-width: $bp-medium) {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ 
   &__photo {
     margin-top: 10rem;
   }
@@ -13,31 +19,43 @@
 .Gallery {
   background-color: $color-white;
   padding: 3rem;
+  padding-bottom: 1rem;
   margin-bottom: 3rem;
   &-photo {
     width: 100%;
     display: inline-block;
     align-items:center;
-    &-ver {
+
+
+   
+   &-ver {
       transform: translateY(50%);
     }
   }
+
+  &-nav{
+	  width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+
 }
 
-.ant-carousel .slick-prev, .ant-carousel .slick-next {
-  fill:violet !important;
+.slick-prev{
+  left: 0px !important;
+  color: black;
   z-index: 10 !important;
-}
-.ant-carousel .slick-prev {
-  left: 8px !important;
+  top: 50%;
 }
 
-.ant-carousel .slick-next {
-  right: 8px !important;
+.slick-next {
+  right: 0px !important;
+  color: black;
+  z-index: 10 !important;
+  top: 50%;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  margin-top:0px;
+.slick-list {
+  padding-left: 0px;
 }
-
