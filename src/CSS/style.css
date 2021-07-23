@@ -19,8 +19,10 @@ body {
   max-width: 60rem; }
 
 .Main-photo {
+  height: 75rem;
   width: 100%;
   object-fit: cover;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -39,7 +41,7 @@ body {
     .Main-photo__text h2 {
       color: #fff;
       font-size: 1.2rem;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
     .Main-photo__text span::before {
       content: "";
       width: 1px;
@@ -57,7 +59,6 @@ body {
     background-color: #f9f9f9; }
 
 .Main-text {
-  height: min-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -84,7 +85,6 @@ body {
 .gallery {
   position: relative;
   width: 100vw;
-  height: max-content;
   padding: 2rem;
   background-color: #e4e4e4; }
   .gallery__photo {
@@ -93,6 +93,7 @@ body {
 .Gallery {
   background-color: #fff;
   padding: 3rem;
+  padding-bottom: 1rem;
   margin-bottom: 3rem; }
   .Gallery-photo {
     width: 100%;
@@ -101,33 +102,33 @@ body {
     .Gallery-photo-ver {
       transform: translateY(50%); }
   .Gallery-nav {
-    clip: rect(20px, 220px, 220px, 20px);
     width: 10rem;
     height: 10rem;
     object-fit: cover; }
 
-.ant-carousel .slick-prev, .ant-carousel .slick-next {
-  fill: violet !important;
-  z-index: 10 !important; }
+.slick-prev {
+  left: 0px !important;
+  color: black;
+  z-index: 10 !important;
+  top: 50%; }
 
-.ant-carousel .slick-prev {
-  left: 8px !important; }
+.slick-next {
+  right: 0px !important;
+  color: black;
+  z-index: 10 !important;
+  top: 50%; }
 
-.ant-carousel .slick-next {
-  right: 8px !important; }
-
-.slick-prev:before,
-.slick-next:before {
-  margin-top: 0px; }
+.slick-list {
+  padding-left: 0px; }
 
 .contact {
-  height: max-content;
+  width: 100%;
   padding: 2rem;
   padding-bottom: 4rem; }
   .contact__content {
     border-radius: 5px;
     color: #4e4e4e;
-    width: 90vw;
+    width: 100%;
     text-align: center;
     font-size: 2rem;
     display: grid;
@@ -200,6 +201,8 @@ body {
       margin: 1rem;
       padding: 1rem;
       border-radius: 2rem; }
+  .contact-name {
+    font-size: 2rem !important; }
 
 .btn__contact {
   width: 50vw;
@@ -293,10 +296,11 @@ body {
   border-style: dashed; }
 
 .Calendar {
-  height: 80vh;
+  width: 100%;
   position: relative;
   padding: 2rem;
-  background-color: #e4e4e4; }
+  background-color: #e4e4e4;
+  flex-direction: column; }
   .Calendar__photo {
     width: 53vw;
     z-index: -2;
@@ -311,7 +315,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 2px;
     padding: 1.2rem;
-    right: 2rem;
+    right: 4%;
     top: 50%; }
     .Calendar__table-month {
       text-align: center;
@@ -365,7 +369,6 @@ body {
 
 .greeting {
   width: 100%;
-  height: 90vh;
   color: #4e4e4e;
   position: relative;
   display: flex;
@@ -377,7 +380,7 @@ body {
     margin-right: 1.5rem;
     position: relative; }
   .greeting__message-head {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 2rem;
     font-weight: bold; }
   .greeting__message-body {

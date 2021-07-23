@@ -39,7 +39,7 @@ function Map(){
                     errer={<p>Maps Load Error</p>}
                     loading={<p>Maps Loading .... </p>}
                 >
-                    <NaverMapAPI/>
+                    <NaverMapAPI />
                 </RenderAfterNavermapsLoaded>
             </div>
             <br/>
@@ -71,10 +71,10 @@ function NaverMapAPI() {
             mapDivId={'maps-getting-started-uncontrolled'}
             style={{
                 width:'100%',
-                height:'40vh'
+                height:'30rem'
             }}
-            defaultCenter={{ lat: 37.5060320, lng: 127.0667230 }} // 지도 초기 위치
-            defaultZoom={15} // 지도 초기 확대 배율
+            defaultCenter={{ lat: 37.506751, lng: 127.065882 }} // 지도 초기 위치
+            defaultZoom={16} // 지도 초기 확대 배율
         >
             <Marker
                 key={1}

@@ -31,18 +31,49 @@ function Gallery(){
     const mainSettings = {
         dots: false,
         arrows : true,
+        prevArrow: <button type='button' className='slick-prev'>Previous</button>,
+        nextArrow: <button type='button' className='slick-next'>Next</button>,
         infinite: true,
         slidesToshow: false,
         slidesToScroll: 1,
+        //fade: true,
     };
 
     const pagingSettings = {
         dots: false,
         arrows: true,
+        prevArrow: <button type='button' className='slick-prev'>Previous</button>,
+        nextArrow: <button type='button' className='slick-next'>Next</button>,
         centerMode: true,
-        slidesToShow: 3,
+        slidesToShow: 7,
         swipeToSlide: true,
         focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 320,
+                settings:{
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings:{
+                    slidesToShow: 5,
+                }
+            }
+        ]
     };
 
     return (
@@ -54,7 +85,7 @@ function Gallery(){
                 <span className="head__line">&nbsp;</span>
             </div>
 
-            <div align='center' className="Gallery" style={{width:'100%', height:'100%'}}>
+            <div align='center' className="Gallery" /*style={{width:'100%', height:'100%'}}*/>
                 <Slider ref={slider1}
                 asNavFor={pagingSlick}
                 {...mainSettings}
@@ -105,8 +136,8 @@ function Gallery(){
                     ref = {slider2}
                     {...pagingSettings}
                 >
-                    <div>
-                        <img src = {img01} className="Gallery-nav" alt = "main"/>
+                    <div className="pagingSlide">
+                        <img src = {img01} className="pagingSlide Gallery-nav" alt = "main" id ="pagingSlide"/>
                     </div>
                     <div>
                         <img src = {img02_VER} className="Gallery-nav" alt = "main"/>

@@ -1,8 +1,8 @@
 .Main-photo{
-  //height: 90vh;
+  height: 75rem;
   width: 100%;
   object-fit: cover;
-  //display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position:relative;
@@ -27,7 +27,7 @@
     h2{
       color: $color-white;
       font-size: 1.2rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+      text-shadow: 1px 1px 2px rgba(0,0,0,.3);
     }
 
     span::before{
@@ -51,7 +51,7 @@
 }
 
 .Main-text {
-    height: min-content;
+    //height: min-content;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;

@@ -38,17 +38,17 @@ function Contact() {
           <div className = "contact__content-grid-2">
               <span>신부</span> 주수현
               <div className ="contact-icon">
-                <a href="tel:010-3389-0910"> 
+                <a href="tel:010-5426-2759"> 
                     <PhoneFilled style={{fontSize:'2rem', color: '#fff', backgroundColor:'#fab1a0'}} className = "contact__content-iconCircle"/>
                 </a>
-                <a href="sms:010-3389-0910"> 
+                <a href="sms:010-5426-2759"> 
                     <MessageFilled style={{fontSize:'2rem', color:'#fff', backgroundColor:'#b2bec3'}} className = "contact__content-iconCircle"/>
                 </a>
             </div>
           </div>
         
           <div className = "contact__content-grid-3">
-              <span>아버지&nbsp;</span> 김효식 
+              <span>아버지&nbsp;</span><span className="contact-name">김효식 </span>
               <div className ="contact-icon">
                 <a href="tel:010-8899-2785"> 
                 <PhoneFilled style={{fontSize:'2rem', color: '#0984e3'}} className = "contact__content-icon"/>
