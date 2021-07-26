@@ -77,7 +77,7 @@ function Calendar(){
                 {/* <p class="Calendar__table-sub">09월 04일 · 토요일 · 오전 11:30 응수 ❤️ 수현 D - {getDDay()}</p> */}
             </div>
             <div className="Calendar__sub">
-                <p>eunsoo.soohyeon </p>
+                <p>eungsoo.soohyeon </p>
                 <p>2021.09.04 SAT. AM 11:30</p>
                 <p>Wedding March</p>
             </div>
