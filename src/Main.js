@@ -35,7 +35,7 @@ function main(){
             <section className = "greeting">
             <div className='head'>
                 <h2 class="head__text">
-                Invitaion<br/>card
+                Invitation<br/>card
                 </h2>
             <span className="head__line">&nbsp;</span>
             </div>
