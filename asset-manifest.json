@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/esh_weddingcard/static/css/main.0b20b1fc.chunk.css",
-    "main.js": "/esh_weddingcard/static/js/main.98909a22.chunk.js",
-    "main.js.map": "/esh_weddingcard/static/js/main.98909a22.chunk.js.map",
+    "main.js": "/esh_weddingcard/static/js/main.30ba62cf.chunk.js",
+    "main.js.map": "/esh_weddingcard/static/js/main.30ba62cf.chunk.js.map",
     "runtime-main.js": "/esh_weddingcard/static/js/runtime-main.168633b6.js",
     "runtime-main.js.map": "/esh_weddingcard/static/js/runtime-main.168633b6.js.map",
     "static/css/2.d89db4ab.chunk.css": "/esh_weddingcard/static/css/2.d89db4ab.chunk.css",
@@ -48,6 +48,6 @@
     "static/css/2.d89db4ab.chunk.css",
     "static/js/2.3ba7826e.chunk.js",
     "static/css/main.0b20b1fc.chunk.css",
-    "static/js/main.98909a22.chunk.js"
+    "static/js/main.30ba62cf.chunk.js"
   ]
 }
