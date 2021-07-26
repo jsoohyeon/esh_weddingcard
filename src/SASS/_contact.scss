@@ -56,38 +56,51 @@
       & span {
         font-size: 8px;
       }
+
+      @media only screen and (max-width: 18.75em) {
+      flex-direction: column;
+      }
     }
     &-grid-4 {
       grid-column: 1;
       grid-row: 4;
-
+      
       display: flex;
       align-items: center;
       & span {
         font-size: 8px;
       }
+      @media only screen and (max-width: 18.75em) {
+      flex-direction: column;
+      }
     }
-
+    
     &-grid-5 {
       grid-column: 2;
       grid-row: 3;
-
+      
       display: flex;
       align-items: center;
       & span {
         font-size: 8px;
       }
+      @media only screen and (max-width: 18.75em) {
+      flex-direction: column;
+      }
     }
-
+    
     &-grid-6 {
       grid-column: 2;
       grid-row: 4;
-
+      
       display: flex;
       align-items: center;
       
       & span {
         font-size: 8px;
+      }
+      @media only screen and (max-width: 18.75em) {
+      flex-direction: column;
       }
     }
 
@@ -127,8 +140,8 @@
   }
 }
 
-.btn__contact {
-  width: 50vw; 
+.btn-groom__contact {
+  width: 65%; 
   height: 5rem;
   font-size: 1.5rem;
   color: #FFFFF8;
@@ -136,6 +149,25 @@
   background-color: $color-primary-gray;
   margin-bottom: 1.5rem;
   margin-top: 5rem;
+  text-decoration: none;
+  border: none;
+  box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
+
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-bride__contact {
+  width: 65%; 
+  height: 5rem;
+  font-size: 1.5rem;
+  color: #FFFFF8;
+  border-radius: 10rem;
+  background-color: $color-primary-gray;
+  margin-bottom: 1.5rem;
+  margin-top: 1.2rem;
   text-decoration: none;
   border: none;
   box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
@@ -182,7 +214,7 @@
   }
   
   &-bride {
-    margin-top: 2nprem;
+    margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: center;

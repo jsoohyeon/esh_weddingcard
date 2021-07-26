@@ -1,12 +1,11 @@
 .congrats {
     padding: 2rem;
-  background-color: $color-primary-gray-5;
-
-
-  @media only screen and (min-width: $bp-medium) {
-    max-width: 60rem;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: $color-primary-gray-5;
+    
+    @media only screen and (min-width: $bp-medium) {
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
   }
 
     &__message-add{
@@ -20,10 +19,11 @@
             margin-top: 1rem;
             border: none;
             color: white;
-            background-color: #f2cc00;
+            background-color: $color-gold;
             width: 100%;
             padding: 1rem;
             border-radius: 100rem;
+            font-family: nanumGothic !important;
         }
     }
 
@@ -46,7 +46,8 @@
           }
       
           &::-webkit-input-placeholder {
-            color: $color-primary-gray-5
+            //color: $color-primary-gray-5
+            font-family: nanumGothic !important;
           }
     }
     &__label {    

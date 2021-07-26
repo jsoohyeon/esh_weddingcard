@@ -7,7 +7,7 @@ import Message from './image/message.png';
 
 function Footer() {
     const [smsURL, setSmsURL] = useState('');
-    var URL = 'https://jsoohyeon.github.io/invite_you';
+    var URL = 'https://jsoohyeon.github.io/esh_weddingcard/';
     
     const KakaoURL = () => {
         window.Kakao.Link.sendDefault({
@@ -35,9 +35,9 @@ function Footer() {
         const userAgent = navigator.userAgent.toLocaleLowerCase()
 
         if (userAgent.search('android') > -1) {
-            setSmsURL('sms:?body=https://jsoohyeon.github.io/invite_you/ 2021.09.04 AM 11:30 그랜드힐 컨벤션 2층 사브리나홀');
+            setSmsURL('sms:?body=https://jsoohyeon.github.io/esh_weddingcard/ 2021.09.04 AM 11:30 그랜드힐 컨벤션 2층 사브리나홀');
         } else if (userAgent.search('iphone') > -1 || userAgent.search('ipad') > -1) {
-            setSmsURL('sms:&body=https://jsoohyeon.github.io/invite_you/ 2021.09.04 AM 11:30 그랜드힐 컨벤션 2층 사브리나홀');
+            setSmsURL('sms:&body=https://jsoohyeon.github.io/esh_weddingcard/ 2021.09.04 AM 11:30 그랜드힐 컨벤션 2층 사브리나홀');
         }
     }
 
@@ -57,7 +57,7 @@ function Footer() {
                     <button className="Kakao-icon_btn" type="button"onClick={KakaoURL}><img src={Kakao} className="Kakao-icon" alt="kakao"/></button>
                 </div>
                 <div className="grid-3">
-                    <CopyToClipboard onCopy={onCopy} text={"https://jsoohyeon.github.io/invite_you/"}>
+                    <CopyToClipboard onCopy={onCopy} text={"https://jsoohyeon.github.io/esh_weddingcard/"}>
                         <img className="Copy-icon" src={Copy} alt="Copy"/>
                     </CopyToClipboard>
                 </div>

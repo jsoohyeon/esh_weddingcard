@@ -9,12 +9,15 @@ import img04 from './image/CH5_0397-w1200.jpg'
 import img05_VER from './image/CH5_0513-w1600.jpg'
 import img06_PORT from './image/CH5_0620-w1200.jpg'
 import img07_PORT from './image/CH5_0793-w1200.jpg'
-import img08 from './image/CH5_0835-w1200.jpg'
+//import img08 from './image/CH5_0835-w1200.jpg'
 import img09_PORT from './image/CH5_0868-w1200.jpg'
 import img10_VER from './image/CH5_0884-w1200.jpg'
 import img11 from './image/CH5_0917-w1200.jpg'
 import img12 from './image/CH5_1012-w1200.jpg'
 import img13 from './image/CH5_1050-w1200.jpg'
+import img14 from './image/CH5_0102-w1200.jpg'
+import img15 from './image/eungself-w1200.jpg'
+import img16 from './image/hyeonself-w1200.jpg'
 
 function Gallery(){
     const [mainSlick, setMainSlick] = useState(null);
@@ -45,7 +48,7 @@ function Gallery(){
         prevArrow: <button type='button' className='slick-prev'>Previous</button>,
         nextArrow: <button type='button' className='slick-next'>Next</button>,
         centerMode: true,
-        slidesToShow: 5,
+        slidesToShow: 3,
         swipeToSlide: true,
         focusOnSelect: true,
         responsive: [
@@ -70,7 +73,7 @@ function Gallery(){
             {
                 breakpoint: 1024,
                 settings:{
-                    slidesToShow: 5,
+                    slidesToShow: 3,
                 }
             }
         ]
@@ -78,29 +81,38 @@ function Gallery(){
 
     return (
         <div className = "gallery">
-            <div className='head'>
+            <div className="head">
                 <h2 class="head__text">
                     Gallery
                 </h2>
                 <span className="head__line">&nbsp;</span>
             </div>
 
-            <div className="Gallery" /*style={{width:'100%', height:'100%'}}*/>
+            <div className="Gallery" style={{width:'100%', height:'100%'}}>
                 <Slider ref={slider1}
                 asNavFor={pagingSlick}
                 {...mainSettings}
                 >
                     <div>
-                        <img src = {img01} className="Gallery-photo" alt = "main"/>
+                        <img src = {img14} className="Gallery-photo" alt = "main"/>
                     </div>
                     <div>
                         <img src = {img02_VER} className="Gallery-photo Gallery-photo-ver" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img03_VER} className="Gallery-photo Gallery-photo-ver" alt = "main"/>
+                        <img src = {img04} className="Gallery-photo" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img04} className="Gallery-photo" alt = "main"/>
+                        <img src = {img15} className="Gallery-photo" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img16} className="Gallery-photo" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img01} className="Gallery-photo" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img03_VER} className="Gallery-photo Gallery-photo-ver" alt = "main"/>
                     </div>
                     <div>
                         <img src = {img05_VER} className="Gallery-photo Gallery-photo-ver" alt = "main"/>
@@ -112,16 +124,13 @@ function Gallery(){
                         <img src = {img07_PORT} className="Gallery-photo" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img08} className="Gallery-photo" alt = "main"/>
-                    </div>
-                    <div>
                         <img src = {img09_PORT} className="Gallery-photo" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img10_VER} className="Gallery-photo Gallery-photo-ver" alt = "main"/>
+                        <img src = {img11} className="Gallery-photo" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img11} className="Gallery-photo" alt = "main"/>
+                        <img src = {img10_VER} className="Gallery-photo Gallery-photo-ver" alt = "main"/>
                     </div>
                     <div>
                         <img src = {img12} className="Gallery-photo" alt = "main"/>
@@ -129,6 +138,7 @@ function Gallery(){
                     <div>
                         <img src = {img13} className="Gallery-photo" alt = "main"/>
                     </div>
+                    
                 </Slider>
 
                 <Slider
@@ -136,18 +146,28 @@ function Gallery(){
                     ref = {slider2}
                     {...pagingSettings}
                 >
-                    <div className="pagingSlide">
-                        <img src = {img01} className="pagingSlide Gallery-nav" alt = "main" id ="pagingSlide"/>
+                    <div>
+                        <img src = {img14} className="Gallery-nav" alt = "main"/>
                     </div>
                     <div>
                         <img src = {img02_VER} className="Gallery-nav" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img03_VER} className="Gallery-nav" alt = "main"/>
-                    </div>
-                    <div>
                         <img src = {img04} className="Gallery-nav" alt = "main"/>
                     </div>
+                    <div>
+                        <img src = {img15} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img16} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img01} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    <div>
+                        <img src = {img03_VER} className="Gallery-nav" alt = "main"/>
+                    </div>
+                    
                     <div>
                         <img src = {img05_VER} className="Gallery-nav" alt = "main"/>
                     </div>
@@ -158,16 +178,13 @@ function Gallery(){
                         <img src = {img07_PORT} className="Gallery-nav" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img08} className="Gallery-nav" alt = "main"/>
-                    </div>
-                    <div>
                         <img src = {img09_PORT} className="Gallery-nav" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img10_VER} className="Gallery-nav" alt = "main"/>
+                        <img src = {img11} className="Gallery-nav" alt = "main"/>
                     </div>
                     <div>
-                        <img src = {img11} className="Gallery-nav" alt = "main"/>
+                        <img src = {img10_VER} className="Gallery-nav" alt = "main"/>
                     </div>
                     <div>
                         <img src = {img12} className="Gallery-nav" alt = "main"/>
@@ -175,6 +192,7 @@ function Gallery(){
                     <div>
                         <img src = {img13} className="Gallery-nav" alt = "main"/>
                     </div>
+                    
                 </Slider>
                 <br/><br/>
             </div>

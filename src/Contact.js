@@ -104,8 +104,8 @@ function Contact() {
       </div>
 
 
-    <Popup trigger={<button className="btn__contact"> 마음 전하실 곳 </button>} >
-    <div className = "popup__content">
+    <Popup trigger={<button className="btn-groom__contact"> 신랑측 마음 전하실 곳 </button>} >
+        <div className = "popup__content">
         <img src = {leafleft} className = "popup__content-leaf-1" alt='leaf-left' />
 
         <div className="popup__content-groom">
@@ -117,9 +117,9 @@ function Contact() {
         </div>
 
         <div className="popup__content-bride" >
-            <h4 className = "popup__content-title">신부 주수현<br/></h4>
-            <CopyToClipboard onCopy={onCopy} text={"1002-552-923835"} className="popup__content-btn">
-                <button>우리은행 1002-552-923835</button>
+            <h4 className = "popup__content-title">신랑 혼주 김효식<br/></h4>
+            <CopyToClipboard onCopy={onCopy} text={"110-283-795721"} className="popup__content-btn">
+                <button>신한은행 110-283-795721</button>
             </CopyToClipboard>
         </div>
         <div className="popup__content-copy">
@@ -127,6 +127,32 @@ function Contact() {
         </div>
           <img src = {leafright} className = "popup__content-leaf-2" alt='leaf-right' />
       </div>
+    </Popup>
+
+    <Popup trigger={<button className="btn-bride__contact"> 신부측 마음 전하실 곳 </button>} >
+        <div className = "popup__content">
+        <img src = {leafleft} className = "popup__content-leaf-1" alt='leaf-left' />
+
+        <div className="popup__content-groom">
+            <h4 className = "popup__content-title">신부 주수현<br/></h4>
+        
+            <CopyToClipboard onCopy={onCopy} text={"1002-552-923835"} className="popup__content-btn">
+                <button>우리은행 1002-552-923835</button>
+            </CopyToClipboard>
+        </div>
+
+        <div className="popup__content-bride" >
+            <h4 className = "popup__content-title">신부 혼주 주용회<br/></h4>
+            <CopyToClipboard onCopy={onCopy} text={"075-102519-01-001"} className="popup__content-btn">
+                <button>우리은행 075-102519-01-001</button>
+            </CopyToClipboard>
+        </div>
+        <div className="popup__content-copy">
+            계좌번호를 클릭하시면 복사됩니다!
+        </div>
+          <img src = {leafright} className = "popup__content-leaf-2" alt='leaf-right' />
+      </div>
+
     </Popup>
     </div>
   )

@@ -79,7 +79,7 @@ function Calendar(){
             <div className="Calendar__sub">
                 <p>eunsoo.soohyeon </p>
                 <p>2021.09.04 SAT. AM 11:30</p>
-                <p>March wedding</p>
+                <p>Wedding March</p>
             </div>
         </div>
     )

@@ -114,7 +114,7 @@ function Messeage () {
                         <label for="content" className="congrats__label">축하 메시지 입력중...</label>
                     </div>
                     
-                    <button className='congrats__message-add__button' onClick={onClickAdd}>등록하기</button>
+                    <button className='congrats__message-add__button' onClick={onClickAdd}>등록</button>
                 </div>
                 <br/><br/>
 

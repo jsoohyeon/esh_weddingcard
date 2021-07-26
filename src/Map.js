@@ -1,14 +1,20 @@
 import React from "react";
 import { Collapse } from 'antd';
+import { CopyOutlined } from '@ant-design/icons'
 import "antd/dist/antd.css";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import {RenderAfterNavermapsLoaded, NaverMap, Marker} from 'react-naver-maps';
 import naver_map from './image/naver-map.png';
 import kakao_map from './image/kakao-map.png';
 import google_map from './image/google-map.png';
+import t_map from './image/t-map.png'
 
 const { Panel } = Collapse;
 
 function Map(){
+    const onCopy = () => {
+        alert('복사되었습니다!');
+    }
     return (
         <div className="map">
             <div className="head">
@@ -20,7 +26,12 @@ function Map(){
 
             <div className="map-text">
                 <div>그랜드힐컨벤션 2층 사브리나홀</div>
-                <div>(서울특별시 강남구 대치2동 역삼로 607)</div>
+                <div>(서울특별시 강남구 대치2동 역삼로 607&nbsp;
+                    <CopyToClipboard onCopy={onCopy} text={"서울특별시 강남구 대치2동 역삼로 607"} className="popup__content-btn">
+                        <CopyOutlined />
+                    </CopyToClipboard>
+                )
+                </div>
             </div>
             <div className = "col-md-12 text-center">
                 <a href="http://naver.me/Fh6NdljX">
@@ -31,6 +42,9 @@ function Map(){
                 </a>
                 <a href="https://goo.gl/maps/Q1QfHFwLczLMnvVr6">
                     <img alt="google-map" id="google_map" className = "map-icon" src = {google_map}/>
+                </a>
+                <a href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx04069debe6214667a10b31992300cef9&name=%EA%B7%B8%EB%9E%9C%EB%93%9C%ED%9E%90%EC%BB%A8%EB%B2%A4%EC%85%98&lon=127.0667230&lat=37.5060320">
+                    <img alt="T-map" id="t_map" className="map-icon" src = {t_map}/>
                 </a>
             </div>
             <div align='center'>

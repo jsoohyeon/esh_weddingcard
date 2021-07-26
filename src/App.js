@@ -14,7 +14,7 @@ import React,{ useState } from "react";
 
 function App() {
   return (
-    <div style = {{position:'absolute'}}>
+    <div /*style={{position:'absolute'}}*/>
       <Main/>
       <Calendar/>
       <Contact/>

@@ -30,6 +30,8 @@
   font-size: 2rem;
   margin-top: 5rem;
   margin-bottom: 2rem;
+  font-family: nanumGothic !important;
+
 }
 
 .map-text {
@@ -46,6 +48,8 @@
   display:block;
   &__text{
     margin: 0px;
+    font-family: nanumGothic !important;
+
   }
 }
 
